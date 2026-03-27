@@ -1,3 +1,4 @@
 *.map
 *.js.map
 .DS_Store
+.idea
