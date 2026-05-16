@@ -1,5 +1,6 @@
 ---
 noindex: true
+title: Cyrillic App : Política de Privacidad
 ---
 ## [EN]({{ "/privacy" | relative_url }}) | [DE]({{ "/privacy/de" | relative_url }}) | [ES]({{ "/privacy/es" | relative_url }}) | [FR]({{ "/privacy/fr" | relative_url }}) | [IT]({{ "/privacy/it" | relative_url }}) | [PT]({{ "/privacy/pt" | relative_url }})
 # Cyrillic App: Política de Privacidad
