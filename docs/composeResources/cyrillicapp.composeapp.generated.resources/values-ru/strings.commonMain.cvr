@@ -1,4 +1,5 @@
 version:0
+string|action_delete|0KPQtNCw0LvQuNGC0Yw=
 string|alphabet_filter_both|0J7QsdCw
 string|alphabet_filter_case_lower|0KHRgtGA0L7Rh9C90YvQtQ==
 string|alphabet_filter_case_upper|0JfQsNCz0LvQsNCy0L3Ri9C1
@@ -132,4 +133,5 @@ string|paywall_title|0J7QsdC90L7QstC40YLRjCDQtNC+IFBybw==
 string|paywall_unlock_now_cta|0J/QvtC70YPRh9C40YLRjCBQcm8g4oCUICUxJHM=
 string|text_field_action_clear|0J7Rh9C40YHRgtC40YLRjA==
 string|text_field_action_copy|0JrQvtC/0LjRgNC+0LLQsNGC0Yw=
+string|text_field_action_paste|0JLRgdGC0LDQstC40YLRjA==
 string|text_field_action_share|0J/QvtC00LXQu9C40YLRjNGB0Y8=
