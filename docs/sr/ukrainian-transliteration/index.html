@@ -78,7 +78,7 @@
         .faq summary { cursor:pointer; font-weight:600; }
         .faq p { color:var(--muted); margin:10px 0 0; }
         .center { text-align:center; margin:40px 0; }
-        .app-box { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; margin:40px 0; text-align:center; }
+        .app-box { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; margin:32px 0 40px; text-align:center; }
         .app-box h2 { margin:0 0 12px; }
         .app-box p { color:var(--muted); }
         .badges { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:16px; }
@@ -87,6 +87,8 @@
         .badges .play img { height:62.5px; margin:-7.25px 0; }
         :lang(en) .badges .play img, :lang(mk) .badges .play img, :lang(be) .badges .play img { height:71.4px; margin:-11.7px; }
         .social-proof { font-size:.95rem; }
+        .secondary-cta { text-align:center; margin:-24px 0 40px; font-size:.95rem; }
+        .secondary-cta .hint { display:block; color:var(--muted); font-size:.9rem; }
         footer { border-top:1px solid var(--border); padding:24px 0 40px; color:var(--muted); font-size:.9rem; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; }
     </style>
 </head>
@@ -113,15 +115,26 @@
                     <option lang="mk" value="mk">Македонски</option>
                 </select>
             </label>
-            <a href="#app">Преузми апликацију</a>
-            <a class="btn small" href="/sr/convert/">Отвори конвертор</a>
+            <a href="/sr/convert/">Отвори конвертор</a>
+            <a class="btn small" href="#app">Преузми апликацију</a>
         </div>
     </header>
 
     <main>
         <h1>Транслитерација украјинског језика</h1>
         <p class="intro">Украјински користи сопствену варијанту ћирилице са словима као што су <strong>Ґ, Є, І и Ї</strong>. Конвертор Cyrillic.app транслитерише украјински текст у латиницу према међународном стандарду <strong>ISO 9:1995</strong>, у коме свако слово има тачно један латинични еквивалент – па се резултат може вратити у ћирилицу.</p>
-        <p class="center"><a class="btn" href="/sr/convert/">Транслитеришите украјински текст →</a></p>
+
+        <section class="app-box" id="app">
+            <h2>Научите украјинску азбуку уз апликацију „Ћирилица Латиница Конвертор“</h2>
+            <p>Учите слова корак по корак уз картице и квизове, користите бирач слова и пресловљавајте без интернета и без реклама. Бесплатно преузимање за Android и iOS; све функције се откључавају једнократном куповином у апликацији.</p>
+            <div class="badges">
+                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_ukrainian-transliteration" rel="noopener" target="_blank"><img alt="Преузмите на App Store-у" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
+                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=sr&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Dukrainian-transliteration" rel="noopener" target="_blank"><img alt="Набавите на Google Play-у" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/sr_badge_web_generic.png" width="184"></a>
+            </div>
+            <p class="social-proof">★ 4,3 · више од 50.000 преузимања на Google Play-у</p>
+        </section>
+
+        <p class="secondary-cta"><a href="/sr/convert/">Транслитеришите украјински текст →</a> <span class="hint">Бесплатно у прегледачу – без инсталације и регистрације.</span></p>
 
         <h2>Украјинска азбука у транслитерацији ISO 9</h2>
         <ul class="alphabet">
@@ -161,16 +174,6 @@
             <li><span>’</span><span class="lat">’</span></li>
         </ul>
 
-        <section class="app-box" id="app">
-            <h2>Научите украјинску азбуку уз апликацију „Ћирилица Латиница Конвертор“</h2>
-            <p>Учите слова корак по корак уз картице и квизове, користите бирач слова и пресловљавајте без интернета и без реклама. Бесплатно преузимање за Android и iOS; све функције се откључавају једнократном куповином у апликацији.</p>
-            <div class="badges">
-                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_ukrainian-transliteration" rel="noopener" target="_blank"><img alt="Преузмите на App Store-у" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
-                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=sr&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Dukrainian-transliteration" rel="noopener" target="_blank"><img alt="Набавите на Google Play-у" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/sr_badge_web_generic.png" width="184"></a>
-            </div>
-            <p class="social-proof">★ 4,3 · више од 50.000 преузимања на Google Play-у</p>
-        </section>
-
         <h2>Слова својствена украјинском</h2>
         <p>За разлику од руског, украјински разликује И (i) од І (ì) и има Ї (ï), Є (ê) и Ґ (g̀). ISO 9 означава те разлике дијакритичким знацима, па речи попут „їжак” (ïžak) или „ґанок” (g̀anok) задржавају тачан правопис.</p>
 
@@ -190,7 +193,6 @@
                 <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_ukrainian-transliteration" rel="noopener" target="_blank"><img alt="Преузмите на App Store-у" height="48" loading="lazy" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
                 <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=sr&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Dukrainian-transliteration" rel="noopener" target="_blank"><img alt="Набавите на Google Play-у" height="71" loading="lazy" src="https://play.google.com/intl/en_us/badges/static/images/badges/sr_badge_web_generic.png" width="184"></a>
             </div>
-            <p><a href="/sr/convert/">Транслитеришите украјински текст →</a></p>
         </section>
     </main>
 

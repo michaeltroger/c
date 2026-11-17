@@ -78,7 +78,7 @@
         .faq summary { cursor:pointer; font-weight:600; }
         .faq p { color:var(--muted); margin:10px 0 0; }
         .center { text-align:center; margin:40px 0; }
-        .app-box { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; margin:40px 0; text-align:center; }
+        .app-box { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; margin:32px 0 40px; text-align:center; }
         .app-box h2 { margin:0 0 12px; }
         .app-box p { color:var(--muted); }
         .badges { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:16px; }
@@ -87,6 +87,8 @@
         .badges .play img { height:62.5px; margin:-7.25px 0; }
         :lang(en) .badges .play img, :lang(mk) .badges .play img, :lang(be) .badges .play img { height:71.4px; margin:-11.7px; }
         .social-proof { font-size:.95rem; }
+        .secondary-cta { text-align:center; margin:-24px 0 40px; font-size:.95rem; }
+        .secondary-cta .hint { display:block; color:var(--muted); font-size:.9rem; }
         footer { border-top:1px solid var(--border); padding:24px 0 40px; color:var(--muted); font-size:.9rem; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; }
     </style>
 </head>
@@ -113,15 +115,26 @@
                     <option lang="mk" value="mk">Македонски</option>
                 </select>
             </label>
-            <a href="#app">App holen</a>
-            <a class="btn small" href="/de/convert/">Konverter öffnen</a>
+            <a href="/de/convert/">Konverter öffnen</a>
+            <a class="btn small" href="#app">App holen</a>
         </div>
     </header>
 
     <main>
         <h1>Serbisch: Lateinisch zu Kyrillisch – und zurück</h1>
         <p class="intro">Serbisch ist eine der wenigen Sprachen, die in zwei Alphabeten geschrieben werden: Kyrillisch (<strong>ćirilica</strong>) und Lateinisch (<strong>latinica</strong>). Beide haben genau 30 Buchstaben, und jedem kyrillischen Buchstaben entspricht genau ein lateinischer, sodass Text automatisch zwischen ihnen umgewandelt werden kann.</p>
-        <p class="center"><a class="btn" href="/de/convert/">Serbischen Text umwandeln →</a></p>
+
+        <section class="app-box" id="app">
+            <h2>Lernen Sie das serbische Alphabet mit der App „Kyrillisch Latein Umwandler“</h2>
+            <p>Lerne die Buchstaben Schritt für Schritt mit Lernkarten und Quiz, nutze die Buchstabenauswahl und konvertiere offline ohne Werbung. Kostenloser Download für Android und iOS; alle Funktionen werden mit einem einmaligen In-App-Kauf freigeschaltet.</p>
+            <div class="badges">
+                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_serbian-latin-to-cyrillic" rel="noopener" target="_blank"><img alt="Laden im App Store" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
+                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=de&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Dserbian-latin-to-cyrillic" rel="noopener" target="_blank"><img alt="Jetzt bei Google Play" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/de_badge_web_generic.png" width="184"></a>
+            </div>
+            <p class="social-proof">★ 4,3 · über 50.000 Downloads bei Google Play</p>
+        </section>
+
+        <p class="secondary-cta"><a href="/de/convert/">Serbischen Text umwandeln →</a> <span class="hint">Kostenlos im Browser – ohne Installation, ohne Anmeldung.</span></p>
 
         <h2>Das serbische Alphabet (Azbuka) und seine lateinischen Entsprechungen</h2>
         <ul class="alphabet">
@@ -157,16 +170,6 @@
             <li><span>Ш ш</span><span class="lat">Š š</span></li>
         </ul>
 
-        <section class="app-box" id="app">
-            <h2>Lernen Sie das serbische Alphabet mit der App „Kyrillisch Latein Umwandler“</h2>
-            <p>Lerne die Buchstaben Schritt für Schritt mit Lernkarten und Quiz, nutze die Buchstabenauswahl und konvertiere offline ohne Werbung. Kostenloser Download für Android und iOS; alle Funktionen werden mit einem einmaligen In-App-Kauf freigeschaltet.</p>
-            <div class="badges">
-                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_serbian-latin-to-cyrillic" rel="noopener" target="_blank"><img alt="Laden im App Store" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
-                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=de&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Dserbian-latin-to-cyrillic" rel="noopener" target="_blank"><img alt="Jetzt bei Google Play" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/de_badge_web_generic.png" width="184"></a>
-            </div>
-            <p class="social-proof">★ 4,3 · über 50.000 Downloads bei Google Play</p>
-        </section>
-
         <h2>Achtung bei Lj, Nj und Dž</h2>
         <p>Drei lateinische Buchstaben werden mit zwei Zeichen geschrieben, gelten aber als ein Buchstabe: <strong>Lj</strong> (Љ), <strong>Nj</strong> (Њ) und <strong>Dž</strong> (Џ). Bei der Umwandlung von Lateinisch zu Kyrillisch muss ein Konverter entscheiden, ob zum Beispiel „nj“ der einzelne Buchstabe Њ ist oder die getrennten Buchstaben Н und Ј, wie in manchen zusammengesetzten Wörtern wie „injekcija“. Prüfen Sie solche Wörter nach der Umwandlung.</p>
 
@@ -186,7 +189,6 @@
                 <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_serbian-latin-to-cyrillic" rel="noopener" target="_blank"><img alt="Laden im App Store" height="48" loading="lazy" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
                 <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=de&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Dserbian-latin-to-cyrillic" rel="noopener" target="_blank"><img alt="Jetzt bei Google Play" height="71" loading="lazy" src="https://play.google.com/intl/en_us/badges/static/images/badges/de_badge_web_generic.png" width="184"></a>
             </div>
-            <p><a href="/de/convert/">Serbischen Text umwandeln →</a></p>
         </section>
     </main>
 

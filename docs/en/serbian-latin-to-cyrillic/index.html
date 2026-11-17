@@ -78,7 +78,7 @@
         .faq summary { cursor:pointer; font-weight:600; }
         .faq p { color:var(--muted); margin:10px 0 0; }
         .center { text-align:center; margin:40px 0; }
-        .app-box { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; margin:40px 0; text-align:center; }
+        .app-box { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; margin:32px 0 40px; text-align:center; }
         .app-box h2 { margin:0 0 12px; }
         .app-box p { color:var(--muted); }
         .badges { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:16px; }
@@ -87,6 +87,8 @@
         .badges .play img { height:62.5px; margin:-7.25px 0; }
         :lang(en) .badges .play img, :lang(mk) .badges .play img, :lang(be) .badges .play img { height:71.4px; margin:-11.7px; }
         .social-proof { font-size:.95rem; }
+        .secondary-cta { text-align:center; margin:-24px 0 40px; font-size:.95rem; }
+        .secondary-cta .hint { display:block; color:var(--muted); font-size:.9rem; }
         footer { border-top:1px solid var(--border); padding:24px 0 40px; color:var(--muted); font-size:.9rem; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; }
     </style>
 </head>
@@ -113,15 +115,26 @@
                     <option lang="mk" value="mk">Македонски</option>
                 </select>
             </label>
-            <a href="#app">Get the app</a>
-            <a class="btn small" href="/en/convert/">Open converter</a>
+            <a href="/en/convert/">Open converter</a>
+            <a class="btn small" href="#app">Get the app</a>
         </div>
     </header>
 
     <main>
         <h1>Serbian Latin to Cyrillic – and back</h1>
         <p class="intro">Serbian is one of the few languages written in two alphabets: Cyrillic (<strong>ćirilica</strong>) and Latin (<strong>latinica</strong>). Both have exactly 30 letters, and each Cyrillic letter matches exactly one Latin letter, so text can be converted between them automatically.</p>
-        <p class="center"><a class="btn" href="/en/convert/">Convert Serbian text →</a></p>
+
+        <section class="app-box" id="app">
+            <h2>Learn the Serbian alphabet with the Cyrillic Latin Transliterator app</h2>
+            <p>Learn the letters step by step with flashcards and quizzes, use the letter picker and convert offline without ads. Free to download for Android and iOS; all features are unlocked with a one-time in-app purchase.</p>
+            <div class="badges">
+                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_serbian-latin-to-cyrillic" rel="noopener" target="_blank"><img alt="Download on the App Store" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
+                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=en&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Dserbian-latin-to-cyrillic" rel="noopener" target="_blank"><img alt="Get it on Google Play" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="184"></a>
+            </div>
+            <p class="social-proof">★ 4.3 · 50,000+ downloads on Google Play</p>
+        </section>
+
+        <p class="secondary-cta"><a href="/en/convert/">Convert Serbian text →</a> <span class="hint">Free in your browser – no installation, no sign-up.</span></p>
 
         <h2>The Serbian alphabet (azbuka) and its Latin equivalents</h2>
         <ul class="alphabet">
@@ -157,16 +170,6 @@
             <li><span>Ш ш</span><span class="lat">Š š</span></li>
         </ul>
 
-        <section class="app-box" id="app">
-            <h2>Learn the Serbian alphabet with the Cyrillic Latin Transliterator app</h2>
-            <p>Learn the letters step by step with flashcards and quizzes, use the letter picker and convert offline without ads. Free to download for Android and iOS; all features are unlocked with a one-time in-app purchase.</p>
-            <div class="badges">
-                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_serbian-latin-to-cyrillic" rel="noopener" target="_blank"><img alt="Download on the App Store" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
-                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=en&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Dserbian-latin-to-cyrillic" rel="noopener" target="_blank"><img alt="Get it on Google Play" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="184"></a>
-            </div>
-            <p class="social-proof">★ 4.3 · 50,000+ downloads on Google Play</p>
-        </section>
-
         <h2>Watch out for Lj, Nj and Dž</h2>
         <p>Three Latin letters are written with two characters but count as one letter: <strong>Lj</strong> (Љ), <strong>Nj</strong> (Њ) and <strong>Dž</strong> (Џ). When converting Latin to Cyrillic, a converter must decide whether, for example, "nj" is the single letter Њ or the separate letters Н and Ј, as in some compound words like "injekcija". Check such words after converting.</p>
 
@@ -186,7 +189,6 @@
                 <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_serbian-latin-to-cyrillic" rel="noopener" target="_blank"><img alt="Download on the App Store" height="48" loading="lazy" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
                 <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=en&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Dserbian-latin-to-cyrillic" rel="noopener" target="_blank"><img alt="Get it on Google Play" height="71" loading="lazy" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="184"></a>
             </div>
-            <p><a href="/en/convert/">Convert Serbian text →</a></p>
         </section>
     </main>
 

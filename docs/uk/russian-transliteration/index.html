@@ -78,7 +78,7 @@
         .faq summary { cursor:pointer; font-weight:600; }
         .faq p { color:var(--muted); margin:10px 0 0; }
         .center { text-align:center; margin:40px 0; }
-        .app-box { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; margin:40px 0; text-align:center; }
+        .app-box { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; margin:32px 0 40px; text-align:center; }
         .app-box h2 { margin:0 0 12px; }
         .app-box p { color:var(--muted); }
         .badges { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:16px; }
@@ -87,6 +87,8 @@
         .badges .play img { height:62.5px; margin:-7.25px 0; }
         :lang(en) .badges .play img, :lang(mk) .badges .play img, :lang(be) .badges .play img { height:71.4px; margin:-11.7px; }
         .social-proof { font-size:.95rem; }
+        .secondary-cta { text-align:center; margin:-24px 0 40px; font-size:.95rem; }
+        .secondary-cta .hint { display:block; color:var(--muted); font-size:.9rem; }
         footer { border-top:1px solid var(--border); padding:24px 0 40px; color:var(--muted); font-size:.9rem; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; }
     </style>
 </head>
@@ -113,15 +115,26 @@
                     <option lang="mk" value="mk">Македонски</option>
                 </select>
             </label>
-            <a href="#app">Завантажити застосунок</a>
-            <a class="btn small" href="/uk/convert/">Відкрити конвертер</a>
+            <a href="/uk/convert/">Відкрити конвертер</a>
+            <a class="btn small" href="#app">Завантажити застосунок</a>
         </div>
     </header>
 
     <main>
         <h1>Транслітерація російської мови</h1>
         <p class="intro">Транслітерація – це запис російських слів латинськими літерами, наприклад <strong>Москва → Moskva</strong>. Конвертер Cyrillic.app використовує міжнародний стандарт <strong>ISO 9:1995</strong> (ідентичний ГОСТ 7.79 система А), який кожній російській літері ставить у відповідність рівно один латинський знак, тож текст можна перетворити назад без втрат.</p>
-        <p class="center"><a class="btn" href="/uk/convert/">Транслітерувати російський текст →</a></p>
+
+        <section class="app-box" id="app">
+            <h2>Вивчайте російський алфавіт із застосунком «Кирилиця Латиниця Конвертер»</h2>
+            <p>Вивчайте літери крок за кроком з картками й тестами, користуйтеся вибором літер і конвертуйте офлайн без реклами. Безкоштовне завантаження для Android та iOS; усі функції відкриваються одноразовою покупкою в застосунку.</p>
+            <div class="badges">
+                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_russian-transliteration" rel="noopener" target="_blank"><img alt="Завантажте в App Store" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
+                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=uk&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Drussian-transliteration" rel="noopener" target="_blank"><img alt="Завантажте з Google Play" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/ua_badge_web_generic.png" width="184"></a>
+            </div>
+            <p class="social-proof">★ 4,3 · понад 50 000 завантажень у Google Play</p>
+        </section>
+
+        <p class="secondary-cta"><a href="/uk/convert/">Транслітерувати російський текст →</a> <span class="hint">Безкоштовно в браузері – без встановлення та реєстрації.</span></p>
 
         <h2>Російський алфавіт у транслітерації ISO 9</h2>
         <ul class="alphabet">
@@ -160,16 +173,6 @@
             <li><span>Я я</span><span class="lat">Â â</span></li>
         </ul>
 
-        <section class="app-box" id="app">
-            <h2>Вивчайте російський алфавіт із застосунком «Кирилиця Латиниця Конвертер»</h2>
-            <p>Вивчайте літери крок за кроком з картками й тестами, користуйтеся вибором літер і конвертуйте офлайн без реклами. Безкоштовне завантаження для Android та iOS; усі функції відкриваються одноразовою покупкою в застосунку.</p>
-            <div class="badges">
-                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_russian-transliteration" rel="noopener" target="_blank"><img alt="Завантажте в App Store" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
-                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=uk&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Drussian-transliteration" rel="noopener" target="_blank"><img alt="Завантажте з Google Play" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/ua_badge_web_generic.png" width="184"></a>
-            </div>
-            <p class="social-proof">★ 4,3 · понад 50 000 завантажень у Google Play</p>
-        </section>
-
         <h2>Чому ISO 9, а не «простий» трансліт?</h2>
         <p>Неформальний трансліт використовує сполучення літер на кшталт «zh», «sh» або «ya». Їх легко набирати, але вони неоднозначні: «sh» може означати Ш або літери С і Х. ISO 9 натомість використовує діакритичні знаки (ž, š, â), тому кожна літера оборотна. Це робить стандарт ідеальним для бібліотек, наукових текстів і точного зворотного перетворення.</p>
 
@@ -189,7 +192,6 @@
                 <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_russian-transliteration" rel="noopener" target="_blank"><img alt="Завантажте в App Store" height="48" loading="lazy" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
                 <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=uk&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Drussian-transliteration" rel="noopener" target="_blank"><img alt="Завантажте з Google Play" height="71" loading="lazy" src="https://play.google.com/intl/en_us/badges/static/images/badges/ua_badge_web_generic.png" width="184"></a>
             </div>
-            <p><a href="/uk/convert/">Транслітерувати російський текст →</a></p>
         </section>
     </main>
 
