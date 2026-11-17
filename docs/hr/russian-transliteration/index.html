@@ -78,6 +78,15 @@
         .faq summary { cursor:pointer; font-weight:600; }
         .faq p { color:var(--muted); margin:10px 0 0; }
         .center { text-align:center; margin:40px 0; }
+        .app-box { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; margin:40px 0; text-align:center; }
+        .app-box h2 { margin:0 0 12px; }
+        .app-box p { color:var(--muted); }
+        .badges { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:16px; }
+        .badges img { height:48px; width:auto; display:block; }
+        /* Google Play badge PNGs (646x250) have locale-specific transparent padding; scale so the visible badge is 48px like the App Store badge. */
+        .badges .play img { height:62.5px; margin:-7.25px 0; }
+        :lang(en) .badges .play img, :lang(mk) .badges .play img, :lang(be) .badges .play img { height:71.4px; margin:-11.7px; }
+        .social-proof { font-size:.95rem; }
         footer { border-top:1px solid var(--border); padding:24px 0 40px; color:var(--muted); font-size:.9rem; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; }
     </style>
 </head>
@@ -104,6 +113,7 @@
                     <option lang="mk" value="mk">Македонски</option>
                 </select>
             </label>
+            <a href="#app">Preuzmi aplikaciju</a>
             <a class="btn small" href="/hr/convert/">Otvori pretvarač</a>
         </div>
     </header>
@@ -150,6 +160,16 @@
             <li><span>Я я</span><span class="lat">Â â</span></li>
         </ul>
 
+        <section class="app-box" id="app">
+            <h2>Naučite rusku abecedu uz aplikaciju „Ćirilica Latinica Pretvarač“</h2>
+            <p>Učite slova korak po korak uz kartice i kvizove, koristite birač slova i pretvarajte izvanmrežno bez oglasa. Besplatno za Android i iOS.</p>
+            <div class="badges">
+                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_russian-transliteration" rel="noopener" target="_blank"><img alt="Preuzmite na App Storeu" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
+                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=hr&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Drussian-transliteration" rel="noopener" target="_blank"><img alt="Nabavite na Google Playu" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/hr_badge_web_generic.png" width="184"></a>
+            </div>
+            <p class="social-proof">★ 4,3 · više od 50.000 preuzimanja na Google Playu</p>
+        </section>
+
         <h2>Zašto ISO 9 umjesto „jednostavnog” translita?</h2>
         <p>Neformalni translit koristi kombinacije slova poput „zh”, „sh” ili „ya”. Lako ih je utipkati, ali su dvosmislene: „sh” može biti Ш ili slova С i Х. ISO 9 umjesto toga koristi dijakritičke znakove (ž, š, â), pa je svako slovo povratno. Zato je idealna za knjižnice, znanstvene tekstove i točne pretvorbe u oba smjera.</p>
 
@@ -163,8 +183,14 @@
             <details><summary>Radi li pretvarač bez interneta?</summary><p>Web-pretvarač radi u potpunosti u vašem pregledniku; vaš se tekst ne šalje na poslužitelj. Aplikacije za Android i iOS također rade potpuno bez interneta.</p></details>
         </div>
 
-        <p class="center"><a class="btn" href="/hr/convert/">Transliterirajte ruski tekst →</a></p>
-        <p class="center"><a href="/hr/">Naučite rusku abecedu uz aplikaciju „Ćirilica Latinica Pretvarač“</a></p>
+        <section class="app-box">
+            <h2>Naučite rusku abecedu uz aplikaciju „Ćirilica Latinica Pretvarač“</h2>
+            <div class="badges">
+                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_russian-transliteration" rel="noopener" target="_blank"><img alt="Preuzmite na App Storeu" height="48" loading="lazy" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
+                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=hr&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Drussian-transliteration" rel="noopener" target="_blank"><img alt="Nabavite na Google Playu" height="71" loading="lazy" src="https://play.google.com/intl/en_us/badges/static/images/badges/hr_badge_web_generic.png" width="184"></a>
+            </div>
+            <p><a href="/hr/convert/">Transliterirajte ruski tekst →</a></p>
+        </section>
     </main>
 
     <footer>

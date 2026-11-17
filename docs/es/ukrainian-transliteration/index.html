@@ -78,6 +78,15 @@
         .faq summary { cursor:pointer; font-weight:600; }
         .faq p { color:var(--muted); margin:10px 0 0; }
         .center { text-align:center; margin:40px 0; }
+        .app-box { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; margin:40px 0; text-align:center; }
+        .app-box h2 { margin:0 0 12px; }
+        .app-box p { color:var(--muted); }
+        .badges { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:16px; }
+        .badges img { height:48px; width:auto; display:block; }
+        /* Google Play badge PNGs (646x250) have locale-specific transparent padding; scale so the visible badge is 48px like the App Store badge. */
+        .badges .play img { height:62.5px; margin:-7.25px 0; }
+        :lang(en) .badges .play img, :lang(mk) .badges .play img, :lang(be) .badges .play img { height:71.4px; margin:-11.7px; }
+        .social-proof { font-size:.95rem; }
         footer { border-top:1px solid var(--border); padding:24px 0 40px; color:var(--muted); font-size:.9rem; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; }
     </style>
 </head>
@@ -104,6 +113,7 @@
                     <option lang="mk" value="mk">Македонски</option>
                 </select>
             </label>
+            <a href="#app">Obtener la app</a>
             <a class="btn small" href="/es/convert/">Abrir conversor</a>
         </div>
     </header>
@@ -151,6 +161,16 @@
             <li><span>’</span><span class="lat">’</span></li>
         </ul>
 
+        <section class="app-box" id="app">
+            <h2>Aprende el alfabeto ucraniano con la app «Cirílico Latino Transliterador»</h2>
+            <p>Aprende las letras paso a paso con tarjetas y cuestionarios, usa el selector de letras y convierte sin conexión y sin anuncios. Gratis para Android e iOS.</p>
+            <div class="badges">
+                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_ukrainian-transliteration" rel="noopener" target="_blank"><img alt="Descargar en el App Store" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
+                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=es&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Dukrainian-transliteration" rel="noopener" target="_blank"><img alt="Disponible en Google Play" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/es_badge_web_generic.png" width="184"></a>
+            </div>
+            <p class="social-proof">★ 4,3 · más de 50.000 descargas en Google Play</p>
+        </section>
+
         <h2>Letras propias del ucraniano</h2>
         <p>A diferencia del ruso, el ucraniano distingue И (i) de І (ì) y tiene además Ї (ï), Є (ê) y Ґ (g̀). ISO 9 marca estas diferencias con diacríticos, de modo que palabras como «їжак» (ïžak) o «ґанок» (g̀anok) conservan su ortografía exacta.</p>
 
@@ -164,8 +184,14 @@
             <details><summary>¿Se envía mi texto a un servidor?</summary><p>No. El conversor web funciona completamente en tu navegador, y las apps para Android e iOS funcionan totalmente sin conexión.</p></details>
         </div>
 
-        <p class="center"><a class="btn" href="/es/convert/">Transliterar texto ucraniano →</a></p>
-        <p class="center"><a href="/es/">Aprende el alfabeto ucraniano con la app «Cirílico Latino Transliterador»</a></p>
+        <section class="app-box">
+            <h2>Aprende el alfabeto ucraniano con la app «Cirílico Latino Transliterador»</h2>
+            <div class="badges">
+                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_ukrainian-transliteration" rel="noopener" target="_blank"><img alt="Descargar en el App Store" height="48" loading="lazy" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
+                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=es&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Dukrainian-transliteration" rel="noopener" target="_blank"><img alt="Disponible en Google Play" height="71" loading="lazy" src="https://play.google.com/intl/en_us/badges/static/images/badges/es_badge_web_generic.png" width="184"></a>
+            </div>
+            <p><a href="/es/convert/">Transliterar texto ucraniano →</a></p>
+        </section>
     </main>
 
     <footer>
