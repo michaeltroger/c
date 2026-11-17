@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{%- if page.noindex %}
+    <meta name="robots" content="noindex, noai, noimageai">
+{%- endif %}
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+{%- assign url_parts = page.url | split: "/" -%}
+{%- if url_parts[2] == "privacy" and url_parts[1] -%}
+{%- assign privacy_locale = url_parts[1] -%}
+{%- assign privacy_langs = "en:English,de:Deutsch,es:Español,fr:Français,it:Italiano,pt:Português" | split: "," %}
+      <div class="text-right mb-3">
+        <label>
+          <span hidden>Language</span>
+          <select aria-label="Language" style="border:1px solid #e1e7e2;border-radius:8px;padding:6px 10px;font-size:.95rem;" onchange="try{localStorage.setItem('lang',this.value)}catch(e){};location.href='{{ '/' | relative_url }}'+this.value+'/privacy/'">
+            {%- for entry in privacy_langs %}
+            {%- assign pair = entry | split: ":" %}
+            <option value="{{ pair[0] }}"{% if pair[0] == privacy_locale %} selected{% endif %}>{{ pair[1] }}</option>
+            {%- endfor %}
+          </select>
+        </label>
+      </div>
+{%- endif %}
+
+      {{ content }}
+
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+{%- assign footer_imprint = "" -%}
+{%- assign footer_privacy = "" -%}
+{%- case privacy_locale -%}
+{%- when "en" -%}{%- assign footer_imprint = "Imprint" -%}{%- assign footer_privacy = "Privacy Policy" -%}
+{%- when "de" -%}{%- assign footer_imprint = "Impressum" -%}{%- assign footer_privacy = "Datenschutzerklärung" -%}
+{%- when "es" -%}{%- assign footer_imprint = "Aviso legal" -%}{%- assign footer_privacy = "Política de Privacidad" -%}
+{%- when "fr" -%}{%- assign footer_imprint = "Mentions légales" -%}{%- assign footer_privacy = "Politique de confidentialité" -%}
+{%- when "it" -%}{%- assign footer_imprint = "Informazioni legali" -%}{%- assign footer_privacy = "Informativa sulla Privacy" -%}
+{%- when "pt" -%}{%- assign footer_imprint = "Informações legais" -%}{%- assign footer_privacy = "Política de Privacidade" -%}
+{%- endcase -%}
+{%- if footer_imprint != "" %}
+        <p><a href="https://michaeltroger.com/imprint">{{ footer_imprint }}</a> · <a href="https://michaeltroger.com/privacy">{{ footer_privacy }}</a></p>
+{%- else %}
+        <p><a href="https://michaeltroger.com/imprint">Imprint / Impressum / Aviso legal / Mentions légales / Informazioni legali / Informações legais</a></p>
+        <p><a href="https://michaeltroger.com/privacy">Privacy Policy / Datenschutzerklärung / Política de Privacidad / Politique de confidentialité / Informativa sulla Privacy / Política de Privacidade</a></p>
+{%- endif %}
+      </div>
+    </div>
+  </body>
+</html>

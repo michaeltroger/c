@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Cyrillic.app – конвертор латиница ↔ кирилица и вежбање на азбуката</title>
+    <meta content="Cyrillic.app ви помага да ја научите кириличната азбука со картички и квизови и да конвертирате латиница во кирилица и обратно. За српски, руски, украински, бугарски, белоруски и македонски. Бесплатен веб конвертор, апликација за Android и iOS." name="description">
+    <meta content="латиница во кирилица, кирилица во латиница, српска азбука конвертер, руска транслитерација, украинска кирилица, бугарска кирилица, белоруска транслитерација, македонска кирилица, ISO 9 транслитерација" name="keywords">
+    <meta content="Michael Troger" name="author">
+    <meta content="index, follow" name="robots">
+    <meta content="#3f51b5" name="theme-color">
+    <meta content="app-id=6758277969" name="apple-itunes-app">
+    <meta content="Конвертер од латиница во кирилица" property="og:title">
+    <meta content="Конвертирајте латиница во кирилица и обратно со стандардизирани системи за транслитерација за словенски јазици." property="og:description">
+    <meta content="website" property="og:type">
+    <meta content="https://cyrillic.app/mk/" property="og:url">
+    <meta content="Cyrillic.app" property="og:site_name">
+    <meta content="https://cyrillic.app/assets/screenshots/mk/01_convert.jpg" property="og:image">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="Конвертер од латиница во кирилица" name="twitter:title">
+    <meta content="Конвертирајте латиница во кирилица и обратно со стандардизирани системи за транслитерација за словенски јазици." name="twitter:description">
+    <meta content="https://cyrillic.app/assets/screenshots/mk/01_convert.jpg" name="twitter:image">
+    <link href="https://cyrillic.app/mk/" rel="canonical">
+    <link href="https://cyrillic.app/" hreflang="x-default" rel="alternate">
+    <link href="https://cyrillic.app/en/" hreflang="en" rel="alternate">
+    <link href="https://cyrillic.app/de/" hreflang="de" rel="alternate">
+    <link href="https://cyrillic.app/es/" hreflang="es" rel="alternate">
+    <link href="https://cyrillic.app/fr/" hreflang="fr" rel="alternate">
+    <link href="https://cyrillic.app/hr/" hreflang="hr" rel="alternate">
+    <link href="https://cyrillic.app/it/" hreflang="it" rel="alternate">
+    <link href="https://cyrillic.app/pt/" hreflang="pt" rel="alternate">
+    <link href="https://cyrillic.app/ru/" hreflang="ru" rel="alternate">
+    <link href="https://cyrillic.app/sr/" hreflang="sr" rel="alternate">
+    <link href="https://cyrillic.app/uk/" hreflang="uk" rel="alternate">
+    <link href="https://cyrillic.app/be/" hreflang="be" rel="alternate">
+    <link href="https://cyrillic.app/bg/" hreflang="bg" rel="alternate">
+    <link href="https://cyrillic.app/mk/" hreflang="mk" rel="alternate">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MobileApplication",
+          "name": "Cyrillic.app",
+          "description": "Транслитерација од латиница на кирилица и вежбање кирилични букви со картички и квизови. Офлајн, без реклами.",
+          "inLanguage": "mk",
+          "url": "https://cyrillic.app/mk/",
+          "image": "https://cyrillic.app/assets/screenshots/mk/01_convert.jpg",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "Android, iOS",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+          "author": { "@type": "Person", "name": "Michael Troger", "url": "https://michaeltroger.com" },
+          "sameAs": [
+            "https://apps.apple.com/app/cyrillic-to-latin/id6758277969",
+            "https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "inLanguage": "mk",
+          "mainEntity": [
+            { "@type": "Question", "name": "Дали конверторот е бесплатен?", "acceptedAnswer": { "@type": "Answer", "text": "Да. Веб-верзијата е бесплатна, а достапни се и апликации за Android и iOS." } },
+            { "@type": "Question", "name": "Кои јазици се поддржани?", "acceptedAnswer": { "@type": "Answer", "text": "Српски, руски, украински, бугарски, белоруски, македонски и црногорски, вклучувајќи транслитерација ISO 9:1995." } },
+            { "@type": "Question", "name": "Може ли да претворам кирилица назад во латиница?", "acceptedAnswer": { "@type": "Answer", "text": "Да. Конверторот работи во двете насоки." } },
+            { "@type": "Question", "name": "Дали мојот текст се испраќа на сервер?", "acceptedAnswer": { "@type": "Answer", "text": "Не. Претворањето се врши локално во вашиот прелистувач." } },
+            { "@type": "Question", "name": "Може ли да ја научам кириличната азбука?", "acceptedAnswer": { "@type": "Answer", "text": "Да, со апликацијата за Android и iOS. Содржи преглед на азбуката, картички и квизови за секоја поддржана азбука. Првиот сет букви е бесплатен; сите функции за учење се отклучуваат со еднократно купување во апликацијата." } }
+          ]
+        }
+      ]
+    }
+    </script>
+    <link href="/mk/convert/" rel="prefetch">
+    <style>
+        :root { --bg:#f7f7fb; --fg:#171a26; --muted:#5a5f73; --card:#fff; --accent:#3f51b5; --accent-fg:#fff; --border:#e2e4ee; }
+        @media (prefers-color-scheme: dark) { :root { --bg:#10121a; --fg:#e8e9f1; --muted:#a4a8bb; --card:#1a1d29; --accent:#9fa8ff; --accent-fg:#10121a; --border:#2a2e3e; } }
+        * { box-sizing:border-box; }
+        body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",Helvetica,Arial,sans-serif; background:var(--bg); color:var(--fg); line-height:1.6; }
+        a { color:var(--accent); }
+        .wrap { max-width:1100px; margin:0 auto; padding:0 20px; }
+        header.nav { display:flex; justify-content:space-between; align-items:center; padding:16px 0; gap:12px; flex-wrap:wrap; }
+        .brand { font-weight:700; font-size:1.2rem; text-decoration:none; color:var(--fg); }
+        .nav-actions { display:flex; align-items:center; gap:12px; }
+        select { background:var(--card); color:var(--fg); border:1px solid var(--border); border-radius:8px; padding:6px 10px; font-size:.95rem; }
+        .btn { display:inline-block; background:var(--accent); color:var(--accent-fg); text-decoration:none; font-weight:600; border-radius:999px; padding:14px 28px; font-size:1.1rem; transition:transform .15s, box-shadow .15s; box-shadow:0 6px 18px rgba(63,81,181,.3); }
+        .btn:hover, .btn:focus-visible { transform:translateY(-2px); box-shadow:0 10px 24px rgba(63,81,181,.4); }
+        .btn.small { padding:8px 16px; font-size:.95rem; box-shadow:none; }
+        .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; padding:40px 0 60px; }
+        .hero h1 { font-size:clamp(2rem,4.5vw,3.2rem); line-height:1.15; margin:0 0 12px; }
+        .hero .sub { font-size:1.3rem; color:var(--accent); font-weight:600; margin:0 0 16px; }
+        .hero p { color:var(--muted); font-size:1.1rem; }
+        .cta { margin:28px 0 8px; }
+        .cta .hint { display:block; font-size:.9rem; margin-top:10px; }
+        .badges { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-top:24px; }
+        .badges img { height:48px; width:auto; display:block; }
+        /* Google Play badge PNGs (646x250) have locale-specific transparent padding; scale so the visible badge is 48px like the App Store badge. */
+        .badges .play img { height:62.5px; margin:-7.25px 0; }
+        :lang(en) .badges .play img, :lang(mk) .badges .play img, :lang(be) .badges .play img { height:71.4px; margin:-11.7px; }
+        .hero p.social-proof { margin:10px 0 0; font-size:.9rem; font-weight:400; }
+        .hero-shot { text-align:center; }
+        .hero-shot img { width:min(300px,80%); height:auto; border-radius:28px; filter:drop-shadow(0 20px 40px rgba(0,0,0,.25)); }
+        section { padding:48px 0; }
+        h2 { font-size:clamp(1.5rem,3vw,2.1rem); text-align:center; margin:0 0 32px; }
+        .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; }
+        .card { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; }
+        .card .ico { font-size:1.8rem; }
+        .card h3 { margin:8px 0; font-size:1.15rem; }
+        .card p { margin:0; color:var(--muted); }
+        .lead { text-align:center; max-width:720px; margin:0 auto 32px; color:var(--muted); font-size:1.05rem; }
+        .gallery { display:flex; justify-content:center; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:12px; }
+        .gallery figure { flex:0 0 auto; width:240px; margin:0; scroll-snap-align:center; text-align:center; }
+        .gallery img { width:100%; height:auto; border-radius:18px; border:1px solid var(--border); }
+        .gallery figcaption { font-size:.9rem; color:var(--muted); margin-top:8px; }
+        .chips { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; padding:0; list-style:none; }
+        .chips li { background:var(--card); border:1px solid var(--border); border-radius:999px; padding:6px 14px; font-size:.9rem; }
+        .steps { max-width:640px; margin:0 auto; padding-left:1.4em; font-size:1.05rem; }
+        .steps li { margin:8px 0; }
+        .faq { max-width:760px; margin:0 auto; }
+        .faq details { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px 18px; margin-bottom:12px; }
+        .faq summary { cursor:pointer; font-weight:600; }
+        .faq p { color:var(--muted); margin:10px 0 0; }
+        .center { text-align:center; }
+        .note { text-align:center; color:var(--muted); font-size:.95rem; max-width:720px; margin:24px auto 0; }
+        footer { border-top:1px solid var(--border); padding:24px 0 40px; color:var(--muted); font-size:.9rem; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; }
+        @media (max-width:800px) { .hero { grid-template-columns:1fr; text-align:center; padding-top:16px; } .badges { justify-content:center; } .gallery { justify-content:flex-start; } }
+        @media (prefers-reduced-motion: reduce) { .btn { transition:none; } }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header class="nav">
+        <a class="brand" href="/mk/">Cyrillic.app</a>
+        <div class="nav-actions">
+            <label>
+                <span hidden>Јазик</span>
+                <select aria-label="Јазик" id="language-select">
+                    <option lang="en" value="en">English</option>
+                    <option lang="de" value="de">Deutsch</option>
+                    <option lang="es" value="es">Español</option>
+                    <option lang="fr" value="fr">Français</option>
+                    <option lang="hr" value="hr">Hrvatski</option>
+                    <option lang="it" value="it">Italiano</option>
+                    <option lang="pt" value="pt">Português</option>
+                    <option lang="ru" value="ru">Русский</option>
+                    <option lang="sr" value="sr">Српски</option>
+                    <option lang="uk" value="uk">Українська</option>
+                    <option lang="be" value="be">Беларуская</option>
+                    <option lang="bg" value="bg">Български</option>
+                    <option lang="mk" value="mk" selected>Македонски</option>
+                </select>
+            </label>
+            <a class="btn small" href="/mk/convert/">Отвори конвертор</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div>
+                <h1>Учете, читајте и конвертирајте кирилица</h1>
+                <p class="sub">Конвертирајте, читајте и учете кирилица</p>
+                <p>Конвертирајте текст помеѓу <strong>латиница</strong> и <strong>кирилица</strong> веднаш. Овој алат поддржува повеќе словенски јазици и меѓународно признати стандарди за транслитерација.</p>
+                <div class="cta">
+                    <a class="btn" href="/mk/convert/">Отвори конвертор →</a>
+                    <span class="hint">Бесплатно во прелистувачот – без инсталација и регистрација.</span>
+                </div>
+                <div class="badges">
+                    <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969" rel="noopener" target="_blank"><img alt="Преземете од App Store" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
+                    <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=mk" rel="noopener" target="_blank"><img alt="Преземете од Google Play" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/mk_badge_web_generic.png" width="184"></a>
+                </div>
+                <p class="social-proof">★ 4,3 · над 50.000 преземања на Google Play</p>
+            </div>
+            <div class="hero-shot">
+                <img alt="Конвертирање текст во двете насоки" fetchpriority="high" height="1200" src="/assets/screenshots/mk/01_convert.jpg" width="540">
+            </div>
+        </div>
+
+        <section>
+            <h2>Зошто да го користите овој конвертор?</h2>
+            <div class="grid">
+                <div class="card"><div aria-hidden="true" class="ico">⇄</div><h3>Во двете насоки</h3><p>Претворете латиница во кирилица и кирилица во латиница со еден допир, вклучувајќи диграфи како lj, nj и dž.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🌍</div><h3>Многу словенски јазици</h3><p>Српски, руски, украински, бугарски, белоруски, македонски и црногорски, како и стандардот ISO 9:1995.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🔒</div><h3>Бесплатно и приватно</h3><p>Работи целосно во вашиот прелистувач. Вашиот текст никогаш не се испраќа на сервер.</p></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Поддржани јазици и стандарди</h2>
+            <ul class="chips">
+                <li>Српски</li>
+                <li>Српски – ISO 9:1995</li>
+                <li>Руски – ISO 9:1995</li>
+                <li>Украински – ISO 9:1995</li>
+                <li>Бугарски – ISO 9:1995</li>
+                <li>Белоруски – ISO 9:1995</li>
+                <li>Македонски</li>
+                <li>Македонски – ISO 9:1995</li>
+                <li>Црногорски</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Водичи</h2>
+            <ul class="chips">
+                <li><a href="/mk/russian-transliteration/">Транслитерација на рускиот (ISO 9)</a></li>
+                <li><a href="/mk/serbian-latin-to-cyrillic/">Српски: латиница во кирилица</a></li>
+                <li><a href="/mk/ukrainian-transliteration/">Транслитерација на украинскиот (ISO 9)</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Уште повеќе во апликацијата</h2>
+            <p class="lead">Сакате сами да читате и пишувате на кирилица? Апликацијата за Android и iOS нуди повеќе од претворање.</p>
+            <div class="grid">
+                <div class="card"><div aria-hidden="true" class="ico">🎓</div><h3>Научете ги кириличните букви</h3><p>Учете ја српската, руската, украинската и други азбуки чекор по чекор со мали групи букви, картички и квизови за препознавање, во двете насоки.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🔤</div><h3>Преглед на азбуката</h3><p>Видете ја целата азбука напоредно на латиница и кирилица, со филтрирање по писмо и големи или мали букви.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🛠️</div><h3>Сопствена табела за претворање</h3><p>Создадете сопствена табела за претворање со персонализирани правила за транслитерација.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">⭐</div><h3>Историја, омилени и споделување</h3><p>Вратете се на последните конверзии, зачувајте омилени и споделувајте резултати директно во WhatsApp, Telegram и други апликации.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">✈️</div><h3>Офлајн и без реклами</h3><p>Работи целосно офлајн без реклами, поддржува темен режим и автоматски го копира резултатот во меморијата.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">⌨️</div><h3>Избирач на букви</h3><p>Немате кирилична тастатура? Допрете ги буквите во вградениот избирач – се вметнуваат точно на местото на курсорот.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🏆</div><h3>Следете го вашиот напредок</h3><p>Отклучувајте групи букви една по една, пробајте Мини повторување и Тест на знаење, вежбајте во обратен режим и надминете го вашиот најдобар резултат, точност и време.</p></div>
+            </div>
+            <p class="note">Бесплатно преземање. Неограничени претворања, сите функции за учење и сопствената табела за претворање се отклучуваат со еднократно купување во апликацијата.</p>
+        </section>
+
+        <section>
+            <h2>Погледнете ја апликацијата</h2>
+            <div class="gallery">
+                <figure><img alt="Конвертирање текст во двете насоки" decoding="async" height="1200" loading="lazy" src="/assets/screenshots/mk/01_convert.jpg" width="540"><figcaption>Конвертирање текст во двете насоки</figcaption></figure>
+                <figure><img alt="Преглед на азбуката" decoding="async" height="1200" loading="lazy" src="/assets/screenshots/mk/02_alphabet.jpg" width="540"><figcaption>Преглед на азбуката</figcaption></figure>
+                <figure><img alt="Учете букви со квизови" decoding="async" height="1200" loading="lazy" src="/assets/screenshots/mk/03_learn.jpg" width="540"><figcaption>Учете букви со квизови</figcaption></figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>Како работи</h2>
+            <ol class="steps">
+                <li>Изберете јазик или стандард за транслитерација.</li>
+                <li>Внесете или залепете текст на латиница или кирилица.</li>
+                <li>Копирајте го резултатот и користете го каде било.</li>
+            </ol>
+            <p class="center" style="margin-top:32px"><a class="btn" href="/mk/convert/">Отвори конвертор →</a></p>
+        </section>
+
+        <section>
+            <h2>Чести прашања</h2>
+            <div class="faq">
+                <details><summary>Дали конверторот е бесплатен?</summary><p>Да. Веб-верзијата е бесплатна, а достапни се и апликации за Android и iOS.</p></details>
+                <details><summary>Кои јазици се поддржани?</summary><p>Српски, руски, украински, бугарски, белоруски, македонски и црногорски, вклучувајќи транслитерација ISO 9:1995.</p></details>
+                <details><summary>Може ли да претворам кирилица назад во латиница?</summary><p>Да. Конверторот работи во двете насоки.</p></details>
+                <details><summary>Дали мојот текст се испраќа на сервер?</summary><p>Не. Претворањето се врши локално во вашиот прелистувач.</p></details>
+                <details><summary>Може ли да ја научам кириличната азбука?</summary><p>Да, со апликацијата за Android и iOS. Содржи преглед на азбуката, картички и квизови за секоја поддржана азбука. Првиот сет букви е бесплатен; сите функции за учење се отклучуваат со еднократно купување во апликацијата.</p></details>
+            </div>
+        </section>
+
+        <section>
+            <h2>Приватност</h2>
+            <p class="lead">Апликацијата не собира лични податоци и работи без сметка. <a href="/privacy/">Прочитајте ја политиката на приватност</a></p>
+            <p class="note">Развиено во ЕУ 🇪🇺</p>
+        </section>
+
+        <section>
+            <h2>Контакт</h2>
+            <p class="lead">Прашања, повратни информации или пронајдовте грешка во транслитерацијата? <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#121;&#114;&#105;&#108;&#108;&#105;&#99;&#64;&#116;&#114;&#111;&#103;&#101;&#114;&#46;&#97;&#112;&#112;">Пишете ни</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <span><a href="https://michaeltroger.com">© <span id="copyright-year"></span> Michael Troger</a></span>
+        <span><a href="https://michaeltroger.com/imprint">Импринт</a> · <a href="https://michaeltroger.com/privacy">Политика на приватност</a></span>
+    </footer>
+</div>
+<script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+    // Remember an explicitly chosen language so the root page redirects there next time.
+    document.getElementById("language-select").addEventListener("change", function () {
+        try { localStorage.setItem("preferredLocale", this.value); } catch (e) {}
+        location.href = "/" + this.value + "/";
+    });
+</script>
+</body>
+</html>

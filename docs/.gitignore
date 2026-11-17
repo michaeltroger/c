@@ -1,0 +1,6 @@
+
+# Local Jekyll preview
+Gemfile.lock
+vendor/
+.bundle/
+_site/

@@ -1,0 +1,38 @@
+---
+layout: null
+permalink: /privacy/
+---
+{%- assign supported = "en,de,es,fr,it,pt" | split: "," -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, noai, noimageai">
+  <title>Privacy Policy</title>
+  <link rel="canonical" href="{{ site.url }}/en/privacy/">
+  <script>
+    (function () {
+      var supported = [{% for l in supported %}"{{ l }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+      var pick = null;
+      try { var saved = localStorage.getItem("lang"); if (supported.indexOf(saved) >= 0) pick = saved; } catch (e) {}
+      if (!pick) {
+        var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+        for (var i = 0; i < langs.length && !pick; i++) {
+          var code = String(langs[i]).toLowerCase().split("-")[0];
+          if (supported.indexOf(code) >= 0) pick = code;
+        }
+      }
+      location.replace("{{ '/' | relative_url }}" + (pick || "en") + "/privacy/" + location.search + location.hash);
+    })();
+  </script>
+  <noscript><meta http-equiv="refresh" content="0; url={{ '/en/privacy/' | relative_url }}"></noscript>
+</head>
+<body>
+  <ul>
+    {%- for l in supported %}
+    <li><a href="{{ '/' | append: l | append: '/privacy/' | relative_url }}" hreflang="{{ l }}">{{ l | upcase }}</a></li>
+    {%- endfor %}
+  </ul>
+</body>
+</html>

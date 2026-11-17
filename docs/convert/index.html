@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Latin To Cyrillic Converter | Serbian, Russian, Ukrainian & More</title>
+    <meta content="Convert Latin to Cyrillic and Cyrillic to Latin online for free. Serbian, Russian, Ukrainian, Bulgarian, Belarusian, Macedonian and Montenegrin, incl. ISO 9. Runs in your browser, no sign-up." name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="index, follow" name="robots">
+    <link href="https://cyrillic.app/convert/" rel="canonical">
+    <meta content="Latin To Cyrillic Converter | Serbian, Russian, Ukrainian & More" property="og:title">
+    <meta content="Convert Latin to Cyrillic and Cyrillic to Latin online for free. Serbian, Russian, Ukrainian, Bulgarian, Belarusian, Macedonian and Montenegrin, incl. ISO 9. Runs in your browser, no sign-up." property="og:description">
+    <meta content="website" property="og:type">
+    <meta content="https://cyrillic.app/convert/" property="og:url">
+    <meta content="Cyrillic.app" property="og:site_name">
+    <meta content="https://cyrillic.app/assets/screenshots/en/01_convert.jpg" property="og:image">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="Latin To Cyrillic Converter | Serbian, Russian, Ukrainian & More" name="twitter:title">
+    <meta content="Convert Latin to Cyrillic and Cyrillic to Latin online for free. Serbian, Russian, Ukrainian, Bulgarian, Belarusian, Macedonian and Montenegrin, incl. ISO 9. Runs in your browser, no sign-up." name="twitter:description">
+    <meta content="https://cyrillic.app/assets/screenshots/en/01_convert.jpg" name="twitter:image">
+    <link href="https://cyrillic.app/convert/" hreflang="x-default" rel="alternate">
+    <link href="https://cyrillic.app/en/convert/" hreflang="en" rel="alternate">
+    <link href="https://cyrillic.app/de/convert/" hreflang="de" rel="alternate">
+    <link href="https://cyrillic.app/es/convert/" hreflang="es" rel="alternate">
+    <link href="https://cyrillic.app/fr/convert/" hreflang="fr" rel="alternate">
+    <link href="https://cyrillic.app/hr/convert/" hreflang="hr" rel="alternate">
+    <link href="https://cyrillic.app/it/convert/" hreflang="it" rel="alternate">
+    <link href="https://cyrillic.app/pt/convert/" hreflang="pt" rel="alternate">
+    <link href="https://cyrillic.app/ru/convert/" hreflang="ru" rel="alternate">
+    <link href="https://cyrillic.app/sr/convert/" hreflang="sr" rel="alternate">
+    <link href="https://cyrillic.app/uk/convert/" hreflang="uk" rel="alternate">
+    <link href="https://cyrillic.app/be/convert/" hreflang="be" rel="alternate">
+    <link href="https://cyrillic.app/bg/convert/" hreflang="bg" rel="alternate">
+    <link href="https://cyrillic.app/mk/convert/" hreflang="mk" rel="alternate">
+    <script>
+        // Redirects the root page to the best matching localized landing page.
+        // A language explicitly chosen in the language picker (stored in localStorage) wins over the browser language.
+        (function () {
+            var supported = ["en","de","es","fr","hr","it","pt","ru","sr","uk","be","bg","mk"];
+            var pick = null;
+            try {
+                var stored = localStorage.getItem("preferredLocale");
+                if (stored && supported.indexOf(stored) !== -1) pick = stored;
+            } catch (e) {}
+            if (!pick) {
+                var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+                for (var i = 0; i < langs.length && !pick; i++) {
+                    var code = String(langs[i]).toLowerCase().split("-")[0];
+                    if (supported.indexOf(code) !== -1) pick = code;
+                }
+            }
+            location.replace("/" + (pick || "en") + "/convert/" + location.search + location.hash);
+        })();
+    </script>
+    <noscript><meta http-equiv="refresh" content="0; url=/en/convert/"></noscript>
+</head>
+<body>
+<h1>Latin To Cyrillic Converter | Serbian, Russian, Ukrainian & More</h1>
+<p>Choose your language:</p>
+<ul>
+            <li><a href="https://cyrillic.app/en/convert/" hreflang="en" lang="en">English</a></li>
+            <li><a href="https://cyrillic.app/de/convert/" hreflang="de" lang="de">Deutsch</a></li>
+            <li><a href="https://cyrillic.app/es/convert/" hreflang="es" lang="es">Español</a></li>
+            <li><a href="https://cyrillic.app/fr/convert/" hreflang="fr" lang="fr">Français</a></li>
+            <li><a href="https://cyrillic.app/hr/convert/" hreflang="hr" lang="hr">Hrvatski</a></li>
+            <li><a href="https://cyrillic.app/it/convert/" hreflang="it" lang="it">Italiano</a></li>
+            <li><a href="https://cyrillic.app/pt/convert/" hreflang="pt" lang="pt">Português</a></li>
+            <li><a href="https://cyrillic.app/ru/convert/" hreflang="ru" lang="ru">Русский</a></li>
+            <li><a href="https://cyrillic.app/sr/convert/" hreflang="sr" lang="sr">Српски</a></li>
+            <li><a href="https://cyrillic.app/uk/convert/" hreflang="uk" lang="uk">Українська</a></li>
+            <li><a href="https://cyrillic.app/be/convert/" hreflang="be" lang="be">Беларуская</a></li>
+            <li><a href="https://cyrillic.app/bg/convert/" hreflang="bg" lang="bg">Български</a></li>
+            <li><a href="https://cyrillic.app/mk/convert/" hreflang="mk" lang="mk">Македонски</a></li>
+</ul>
+</body>
+</html>

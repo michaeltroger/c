@@ -1,0 +1,5 @@
+title: Cyrillic Latin Transliterator
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

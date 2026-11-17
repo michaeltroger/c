@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Cyrillic.app – pretvarač latinica ↔ ćirilica i vježbanje abecede</title>
+    <meta content="Cyrillic.app pomaže vam naučiti ćirilicu uz kartice i kvizove te pretvarati latinicu u ćirilicu i obrnuto. Za srpski, ruski, ukrajinski, bugarski, bjeloruski i makedonski. Besplatni web pretvarač, aplikacija za Android i iOS." name="description">
+    <meta content="latinica u ćirilicu, ćirilica u latinicu, transliteracija, iso 9" name="keywords">
+    <meta content="Michael Troger" name="author">
+    <meta content="index, follow" name="robots">
+    <meta content="#3f51b5" name="theme-color">
+    <meta content="app-id=6758277969" name="apple-itunes-app">
+    <meta content="Pretvarač iz latinice u ćirilicu" property="og:title">
+    <meta content="Pretvorite tekst između latinice i ćirilice koristeći standardizirane sustave transliteracije za slavenske jezike." property="og:description">
+    <meta content="website" property="og:type">
+    <meta content="https://cyrillic.app/hr/" property="og:url">
+    <meta content="Cyrillic.app" property="og:site_name">
+    <meta content="https://cyrillic.app/assets/screenshots/hr/01_convert.jpg" property="og:image">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="Pretvarač iz latinice u ćirilicu" name="twitter:title">
+    <meta content="Pretvorite tekst između latinice i ćirilice koristeći standardizirane sustave transliteracije za slavenske jezike." name="twitter:description">
+    <meta content="https://cyrillic.app/assets/screenshots/hr/01_convert.jpg" name="twitter:image">
+    <link href="https://cyrillic.app/hr/" rel="canonical">
+    <link href="https://cyrillic.app/" hreflang="x-default" rel="alternate">
+    <link href="https://cyrillic.app/en/" hreflang="en" rel="alternate">
+    <link href="https://cyrillic.app/de/" hreflang="de" rel="alternate">
+    <link href="https://cyrillic.app/es/" hreflang="es" rel="alternate">
+    <link href="https://cyrillic.app/fr/" hreflang="fr" rel="alternate">
+    <link href="https://cyrillic.app/hr/" hreflang="hr" rel="alternate">
+    <link href="https://cyrillic.app/it/" hreflang="it" rel="alternate">
+    <link href="https://cyrillic.app/pt/" hreflang="pt" rel="alternate">
+    <link href="https://cyrillic.app/ru/" hreflang="ru" rel="alternate">
+    <link href="https://cyrillic.app/sr/" hreflang="sr" rel="alternate">
+    <link href="https://cyrillic.app/uk/" hreflang="uk" rel="alternate">
+    <link href="https://cyrillic.app/be/" hreflang="be" rel="alternate">
+    <link href="https://cyrillic.app/bg/" hreflang="bg" rel="alternate">
+    <link href="https://cyrillic.app/mk/" hreflang="mk" rel="alternate">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MobileApplication",
+          "name": "Cyrillic.app",
+          "description": "Transliteracija s latinice na ćirilicu i vježbanje ćiriličnih slova uz kartice i kvizove. Bez interneta, bez oglasa.",
+          "inLanguage": "hr",
+          "url": "https://cyrillic.app/hr/",
+          "image": "https://cyrillic.app/assets/screenshots/hr/01_convert.jpg",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "Android, iOS",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+          "author": { "@type": "Person", "name": "Michael Troger", "url": "https://michaeltroger.com" },
+          "sameAs": [
+            "https://apps.apple.com/app/cyrillic-to-latin/id6758277969",
+            "https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "inLanguage": "hr",
+          "mainEntity": [
+            { "@type": "Question", "name": "Je li pretvarač besplatan?", "acceptedAnswer": { "@type": "Answer", "text": "Da. Web verzija je besplatna, a dostupne su i aplikacije za Android i iOS." } },
+            { "@type": "Question", "name": "Koji su jezici podržani?", "acceptedAnswer": { "@type": "Answer", "text": "Srpski, ruski, ukrajinski, bugarski, bjeloruski, makedonski i crnogorski, uključujući transliteraciju ISO 9:1995." } },
+            { "@type": "Question", "name": "Mogu li pretvoriti ćirilicu natrag u latinicu?", "acceptedAnswer": { "@type": "Answer", "text": "Da. Pretvarač radi u oba smjera." } },
+            { "@type": "Question", "name": "Šalje li se moj tekst na poslužitelj?", "acceptedAnswer": { "@type": "Answer", "text": "Ne. Pretvorba se odvija lokalno u vašem pregledniku." } },
+            { "@type": "Question", "name": "Mogu li naučiti ćirilicu?", "acceptedAnswer": { "@type": "Answer", "text": "Da, uz aplikaciju za Android i iOS. Sadrži pregled abecede, kartice i kvizove za svaku podržanu abecedu. Prvi skup slova je besplatan; sve funkcije učenja otključavaju se jednokratnom kupnjom u aplikaciji." } }
+          ]
+        }
+      ]
+    }
+    </script>
+    <link href="/hr/convert/" rel="prefetch">
+    <style>
+        :root { --bg:#f7f7fb; --fg:#171a26; --muted:#5a5f73; --card:#fff; --accent:#3f51b5; --accent-fg:#fff; --border:#e2e4ee; }
+        @media (prefers-color-scheme: dark) { :root { --bg:#10121a; --fg:#e8e9f1; --muted:#a4a8bb; --card:#1a1d29; --accent:#9fa8ff; --accent-fg:#10121a; --border:#2a2e3e; } }
+        * { box-sizing:border-box; }
+        body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",Helvetica,Arial,sans-serif; background:var(--bg); color:var(--fg); line-height:1.6; }
+        a { color:var(--accent); }
+        .wrap { max-width:1100px; margin:0 auto; padding:0 20px; }
+        header.nav { display:flex; justify-content:space-between; align-items:center; padding:16px 0; gap:12px; flex-wrap:wrap; }
+        .brand { font-weight:700; font-size:1.2rem; text-decoration:none; color:var(--fg); }
+        .nav-actions { display:flex; align-items:center; gap:12px; }
+        select { background:var(--card); color:var(--fg); border:1px solid var(--border); border-radius:8px; padding:6px 10px; font-size:.95rem; }
+        .btn { display:inline-block; background:var(--accent); color:var(--accent-fg); text-decoration:none; font-weight:600; border-radius:999px; padding:14px 28px; font-size:1.1rem; transition:transform .15s, box-shadow .15s; box-shadow:0 6px 18px rgba(63,81,181,.3); }
+        .btn:hover, .btn:focus-visible { transform:translateY(-2px); box-shadow:0 10px 24px rgba(63,81,181,.4); }
+        .btn.small { padding:8px 16px; font-size:.95rem; box-shadow:none; }
+        .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; padding:40px 0 60px; }
+        .hero h1 { font-size:clamp(2rem,4.5vw,3.2rem); line-height:1.15; margin:0 0 12px; }
+        .hero .sub { font-size:1.3rem; color:var(--accent); font-weight:600; margin:0 0 16px; }
+        .hero p { color:var(--muted); font-size:1.1rem; }
+        .cta { margin:28px 0 8px; }
+        .cta .hint { display:block; font-size:.9rem; margin-top:10px; }
+        .badges { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-top:24px; }
+        .badges img { height:48px; width:auto; display:block; }
+        /* Google Play badge PNGs (646x250) have locale-specific transparent padding; scale so the visible badge is 48px like the App Store badge. */
+        .badges .play img { height:62.5px; margin:-7.25px 0; }
+        :lang(en) .badges .play img, :lang(mk) .badges .play img, :lang(be) .badges .play img { height:71.4px; margin:-11.7px; }
+        .hero p.social-proof { margin:10px 0 0; font-size:.9rem; font-weight:400; }
+        .hero-shot { text-align:center; }
+        .hero-shot img { width:min(300px,80%); height:auto; border-radius:28px; filter:drop-shadow(0 20px 40px rgba(0,0,0,.25)); }
+        section { padding:48px 0; }
+        h2 { font-size:clamp(1.5rem,3vw,2.1rem); text-align:center; margin:0 0 32px; }
+        .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; }
+        .card { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; }
+        .card .ico { font-size:1.8rem; }
+        .card h3 { margin:8px 0; font-size:1.15rem; }
+        .card p { margin:0; color:var(--muted); }
+        .lead { text-align:center; max-width:720px; margin:0 auto 32px; color:var(--muted); font-size:1.05rem; }
+        .gallery { display:flex; justify-content:center; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:12px; }
+        .gallery figure { flex:0 0 auto; width:240px; margin:0; scroll-snap-align:center; text-align:center; }
+        .gallery img { width:100%; height:auto; border-radius:18px; border:1px solid var(--border); }
+        .gallery figcaption { font-size:.9rem; color:var(--muted); margin-top:8px; }
+        .chips { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; padding:0; list-style:none; }
+        .chips li { background:var(--card); border:1px solid var(--border); border-radius:999px; padding:6px 14px; font-size:.9rem; }
+        .steps { max-width:640px; margin:0 auto; padding-left:1.4em; font-size:1.05rem; }
+        .steps li { margin:8px 0; }
+        .faq { max-width:760px; margin:0 auto; }
+        .faq details { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px 18px; margin-bottom:12px; }
+        .faq summary { cursor:pointer; font-weight:600; }
+        .faq p { color:var(--muted); margin:10px 0 0; }
+        .center { text-align:center; }
+        .note { text-align:center; color:var(--muted); font-size:.95rem; max-width:720px; margin:24px auto 0; }
+        footer { border-top:1px solid var(--border); padding:24px 0 40px; color:var(--muted); font-size:.9rem; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; }
+        @media (max-width:800px) { .hero { grid-template-columns:1fr; text-align:center; padding-top:16px; } .badges { justify-content:center; } .gallery { justify-content:flex-start; } }
+        @media (prefers-reduced-motion: reduce) { .btn { transition:none; } }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header class="nav">
+        <a class="brand" href="/hr/">Cyrillic.app</a>
+        <div class="nav-actions">
+            <label>
+                <span hidden>Jezik</span>
+                <select aria-label="Jezik" id="language-select">
+                    <option lang="en" value="en">English</option>
+                    <option lang="de" value="de">Deutsch</option>
+                    <option lang="es" value="es">Español</option>
+                    <option lang="fr" value="fr">Français</option>
+                    <option lang="hr" value="hr" selected>Hrvatski</option>
+                    <option lang="it" value="it">Italiano</option>
+                    <option lang="pt" value="pt">Português</option>
+                    <option lang="ru" value="ru">Русский</option>
+                    <option lang="sr" value="sr">Српски</option>
+                    <option lang="uk" value="uk">Українська</option>
+                    <option lang="be" value="be">Беларуская</option>
+                    <option lang="bg" value="bg">Български</option>
+                    <option lang="mk" value="mk">Македонски</option>
+                </select>
+            </label>
+            <a class="btn small" href="/hr/convert/">Otvori pretvarač</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div>
+                <h1>Učite, čitajte i pretvarajte ćirilicu</h1>
+                <p class="sub">Pretvarajte, čitajte i učite ćirilicu</p>
+                <p>Pretvorite tekst odmah između <strong>latinice</strong> i <strong>ćirilice</strong>. Alat podržava više slavenskih jezika i međunarodne standarde transliteracije.</p>
+                <div class="cta">
+                    <a class="btn" href="/hr/convert/">Otvori pretvarač →</a>
+                    <span class="hint">Besplatno u pregledniku – bez instalacije i registracije.</span>
+                </div>
+                <div class="badges">
+                    <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969" rel="noopener" target="_blank"><img alt="Preuzmite na App Storeu" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
+                    <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=hr" rel="noopener" target="_blank"><img alt="Nabavite na Google Playu" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/hr_badge_web_generic.png" width="184"></a>
+                </div>
+                <p class="social-proof">★ 4,3 · više od 50.000 preuzimanja na Google Playu</p>
+            </div>
+            <div class="hero-shot">
+                <img alt="Pretvaranje teksta u oba smjera" fetchpriority="high" height="1200" src="/assets/screenshots/hr/01_convert.jpg" width="540">
+            </div>
+        </div>
+
+        <section>
+            <h2>Zašto koristiti ovaj pretvarač?</h2>
+            <div class="grid">
+                <div class="card"><div aria-hidden="true" class="ico">⇄</div><h3>U oba smjera</h3><p>Pretvorite latinicu u ćirilicu i ćirilicu u latinicu jednim dodirom, uključujući dvoslove lj, nj i dž.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🌍</div><h3>Mnogi slavenski jezici</h3><p>Srpski, ruski, ukrajinski, bugarski, bjeloruski, makedonski i crnogorski te standard ISO 9:1995.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🔒</div><h3>Besplatno i privatno</h3><p>Radi u potpunosti u vašem pregledniku. Vaš tekst se nikada ne šalje na poslužitelj.</p></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Podržani jezici i standardi</h2>
+            <ul class="chips">
+                <li>Srpski</li>
+                <li>Srpski – ISO 9:1995</li>
+                <li>Ruski – ISO 9:1995</li>
+                <li>Ukrajinski – ISO 9:1995</li>
+                <li>Bugarski – ISO 9:1995</li>
+                <li>Bjeloruski – ISO 9:1995</li>
+                <li>Makedonski</li>
+                <li>Makedonski – ISO 9:1995</li>
+                <li>Crnogorski</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Vodiči</h2>
+            <ul class="chips">
+                <li><a href="/hr/russian-transliteration/">Transliteracija ruskog (ISO 9)</a></li>
+                <li><a href="/hr/serbian-latin-to-cyrillic/">Srpski: latinica u ćirilicu</a></li>
+                <li><a href="/hr/ukrainian-transliteration/">Transliteracija ukrajinskog (ISO 9)</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Još više u aplikaciji</h2>
+            <p class="lead">Želite sami čitati i pisati ćirilicu? Aplikacija za Android i iOS nudi više od pretvorbe.</p>
+            <div class="grid">
+                <div class="card"><div aria-hidden="true" class="ico">🎓</div><h3>Naučite ćirilična slova</h3><p>Učite srpsku, rusku, ukrajinsku i druge abecede korak po korak uz male skupove slova, kartice i kvizove prepoznavanja, u oba smjera.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🔤</div><h3>Pregled abecede</h3><p>Pogledaj cijelu abecedu usporedno na latinici i ćirilici, uz filtriranje po pismu te velikim ili malim slovima.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🛠️</div><h3>Vlastita tablica pretvorbe</h3><p>Izradite vlastitu tablicu pretvorbe s prilagođenim pravilima transliteracije.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">⭐</div><h3>Povijest, favoriti i dijeljenje</h3><p>Vratite se nedavnim pretvorbama, spremite favorite i dijelite rezultate izravno u WhatsApp, Telegram i druge aplikacije.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">✈️</div><h3>Bez interneta i bez oglasa</h3><p>Radi potpuno bez interneta i bez oglasa, podržava tamni način rada i automatski kopira rezultat u međuspremnik.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">⌨️</div><h3>Birač slova</h3><p>Nemaš ćiriličnu tipkovnicu? Dodirni slova u ugrađenom biraču – umeću se točno na mjesto kursora.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🏆</div><h3>Prati svoj napredak</h3><p>Otključavaj skupove slova jedan po jedan, isprobaj Mini ponavljanje i Test znanja, vježbaj u obrnutom načinu i nadmaši svoj najbolji rezultat, točnost i vrijeme.</p></div>
+            </div>
+            <p class="note">Besplatno preuzimanje. Neograničene pretvorbe, sve funkcije učenja i vlastita tablica pretvorbe otključavaju se jednokratnom kupnjom u aplikaciji.</p>
+        </section>
+
+        <section>
+            <h2>Pogledajte aplikaciju</h2>
+            <div class="gallery">
+                <figure><img alt="Pretvaranje teksta u oba smjera" decoding="async" height="1200" loading="lazy" src="/assets/screenshots/hr/01_convert.jpg" width="540"><figcaption>Pretvaranje teksta u oba smjera</figcaption></figure>
+                <figure><img alt="Pregled abecede" decoding="async" height="1200" loading="lazy" src="/assets/screenshots/hr/02_alphabet.jpg" width="540"><figcaption>Pregled abecede</figcaption></figure>
+                <figure><img alt="Učenje slova kroz kvizove" decoding="async" height="1200" loading="lazy" src="/assets/screenshots/hr/03_learn.jpg" width="540"><figcaption>Učenje slova kroz kvizove</figcaption></figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>Kako radi</h2>
+            <ol class="steps">
+                <li>Odaberite jezik ili standard transliteracije.</li>
+                <li>Upišite ili zalijepite tekst na latinici ili ćirilici.</li>
+                <li>Kopirajte rezultat i koristite ga bilo gdje.</li>
+            </ol>
+            <p class="center" style="margin-top:32px"><a class="btn" href="/hr/convert/">Otvori pretvarač →</a></p>
+        </section>
+
+        <section>
+            <h2>Česta pitanja</h2>
+            <div class="faq">
+                <details><summary>Je li pretvarač besplatan?</summary><p>Da. Web verzija je besplatna, a dostupne su i aplikacije za Android i iOS.</p></details>
+                <details><summary>Koji su jezici podržani?</summary><p>Srpski, ruski, ukrajinski, bugarski, bjeloruski, makedonski i crnogorski, uključujući transliteraciju ISO 9:1995.</p></details>
+                <details><summary>Mogu li pretvoriti ćirilicu natrag u latinicu?</summary><p>Da. Pretvarač radi u oba smjera.</p></details>
+                <details><summary>Šalje li se moj tekst na poslužitelj?</summary><p>Ne. Pretvorba se odvija lokalno u vašem pregledniku.</p></details>
+                <details><summary>Mogu li naučiti ćirilicu?</summary><p>Da, uz aplikaciju za Android i iOS. Sadrži pregled abecede, kartice i kvizove za svaku podržanu abecedu. Prvi skup slova je besplatan; sve funkcije učenja otključavaju se jednokratnom kupnjom u aplikaciji.</p></details>
+            </div>
+        </section>
+
+        <section>
+            <h2>Privatnost</h2>
+            <p class="lead">Aplikacija ne prikuplja osobne podatke i radi bez računa. <a href="/privacy/">Pročitajte pravila privatnosti</a></p>
+            <p class="note">Razvijeno u EU 🇪🇺</p>
+        </section>
+
+        <section>
+            <h2>Kontakt</h2>
+            <p class="lead">Pitanja, povratne informacije ili ste pronašli grešku u transliteraciji? <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#121;&#114;&#105;&#108;&#108;&#105;&#99;&#64;&#116;&#114;&#111;&#103;&#101;&#114;&#46;&#97;&#112;&#112;">Pišite nam</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <span><a href="https://michaeltroger.com">© <span id="copyright-year"></span> Michael Troger</a></span>
+        <span><a href="https://michaeltroger.com/imprint">Impressum</a> · <a href="https://michaeltroger.com/privacy">Pravila privatnosti</a></span>
+    </footer>
+</div>
+<script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+    // Remember an explicitly chosen language so the root page redirects there next time.
+    document.getElementById("language-select").addEventListener("change", function () {
+        try { localStorage.setItem("preferredLocale", this.value); } catch (e) {}
+        location.href = "/" + this.value + "/";
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Cyrillic.app – Latin ↔ Cyrillic Converter & Alphabet Trainer</title>
+    <meta content="Cyrillic.app helps you learn the Cyrillic alphabet with flashcards and quizzes, and convert Latin to Cyrillic and back. For Serbian, Russian, Ukrainian, Bulgarian, Belarusian and Macedonian. Free web converter, app for Android and iOS." name="description">
+    <meta content="latin to cyrillic, cyrillic to latin, serbian azbuka converter, russian transliteration, ukrainian cyrillic converter, bulgarian cyrillic, belarusian transliteration, macedonian cyrillic, iso 9 transliteration" name="keywords">
+    <meta content="Michael Troger" name="author">
+    <meta content="index, follow" name="robots">
+    <meta content="#3f51b5" name="theme-color">
+    <meta content="app-id=6758277969" name="apple-itunes-app">
+    <meta content="Cyrillic ↔ Latin Converter" property="og:title">
+    <meta content="Convert Latin to Cyrillic and Cyrillic to Latin using standardized transliteration systems for Slavic languages." property="og:description">
+    <meta content="website" property="og:type">
+    <meta content="https://cyrillic.app/en/" property="og:url">
+    <meta content="Cyrillic.app" property="og:site_name">
+    <meta content="https://cyrillic.app/assets/screenshots/en/01_convert.jpg" property="og:image">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="Cyrillic ↔ Latin Converter" name="twitter:title">
+    <meta content="Convert Latin to Cyrillic and Cyrillic to Latin using standardized transliteration systems for Slavic languages." name="twitter:description">
+    <meta content="https://cyrillic.app/assets/screenshots/en/01_convert.jpg" name="twitter:image">
+    <link href="https://cyrillic.app/en/" rel="canonical">
+    <link href="https://cyrillic.app/" hreflang="x-default" rel="alternate">
+    <link href="https://cyrillic.app/en/" hreflang="en" rel="alternate">
+    <link href="https://cyrillic.app/de/" hreflang="de" rel="alternate">
+    <link href="https://cyrillic.app/es/" hreflang="es" rel="alternate">
+    <link href="https://cyrillic.app/fr/" hreflang="fr" rel="alternate">
+    <link href="https://cyrillic.app/hr/" hreflang="hr" rel="alternate">
+    <link href="https://cyrillic.app/it/" hreflang="it" rel="alternate">
+    <link href="https://cyrillic.app/pt/" hreflang="pt" rel="alternate">
+    <link href="https://cyrillic.app/ru/" hreflang="ru" rel="alternate">
+    <link href="https://cyrillic.app/sr/" hreflang="sr" rel="alternate">
+    <link href="https://cyrillic.app/uk/" hreflang="uk" rel="alternate">
+    <link href="https://cyrillic.app/be/" hreflang="be" rel="alternate">
+    <link href="https://cyrillic.app/bg/" hreflang="bg" rel="alternate">
+    <link href="https://cyrillic.app/mk/" hreflang="mk" rel="alternate">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MobileApplication",
+          "name": "Cyrillic.app",
+          "description": "Latin to Cyrillic transliteration and Cyrillic letter training with flashcards and quizzes. Works offline, no ads.",
+          "inLanguage": "en",
+          "url": "https://cyrillic.app/en/",
+          "image": "https://cyrillic.app/assets/screenshots/en/01_convert.jpg",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "Android, iOS",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+          "author": { "@type": "Person", "name": "Michael Troger", "url": "https://michaeltroger.com" },
+          "sameAs": [
+            "https://apps.apple.com/app/cyrillic-to-latin/id6758277969",
+            "https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "inLanguage": "en",
+          "mainEntity": [
+            { "@type": "Question", "name": "Is the Latin to Cyrillic converter free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The web version is free to use, and apps for Android and iOS are also available." } },
+            { "@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": { "@type": "Answer", "text": "Serbian, Russian, Ukrainian, Bulgarian, Belarusian, Macedonian and Montenegrin, including ISO 9:1995 transliteration." } },
+            { "@type": "Question", "name": "Can I convert Cyrillic back to Latin?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The converter works in both directions: Latin to Cyrillic and Cyrillic to Latin." } },
+            { "@type": "Question", "name": "Is my text sent to a server?", "acceptedAnswer": { "@type": "Answer", "text": "No. The conversion happens locally in your browser, so your text stays on your device." } },
+            { "@type": "Question", "name": "Can I learn the Cyrillic alphabet?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, with the app for Android and iOS. It includes an alphabet overview, flashcards and quizzes for every supported alphabet. The first Letter Set is free; all learning features are unlocked with a one-time in-app purchase." } }
+          ]
+        }
+      ]
+    }
+    </script>
+    <link href="/en/convert/" rel="prefetch">
+    <style>
+        :root { --bg:#f7f7fb; --fg:#171a26; --muted:#5a5f73; --card:#fff; --accent:#3f51b5; --accent-fg:#fff; --border:#e2e4ee; }
+        @media (prefers-color-scheme: dark) { :root { --bg:#10121a; --fg:#e8e9f1; --muted:#a4a8bb; --card:#1a1d29; --accent:#9fa8ff; --accent-fg:#10121a; --border:#2a2e3e; } }
+        * { box-sizing:border-box; }
+        body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",Helvetica,Arial,sans-serif; background:var(--bg); color:var(--fg); line-height:1.6; }
+        a { color:var(--accent); }
+        .wrap { max-width:1100px; margin:0 auto; padding:0 20px; }
+        header.nav { display:flex; justify-content:space-between; align-items:center; padding:16px 0; gap:12px; flex-wrap:wrap; }
+        .brand { font-weight:700; font-size:1.2rem; text-decoration:none; color:var(--fg); }
+        .nav-actions { display:flex; align-items:center; gap:12px; }
+        select { background:var(--card); color:var(--fg); border:1px solid var(--border); border-radius:8px; padding:6px 10px; font-size:.95rem; }
+        .btn { display:inline-block; background:var(--accent); color:var(--accent-fg); text-decoration:none; font-weight:600; border-radius:999px; padding:14px 28px; font-size:1.1rem; transition:transform .15s, box-shadow .15s; box-shadow:0 6px 18px rgba(63,81,181,.3); }
+        .btn:hover, .btn:focus-visible { transform:translateY(-2px); box-shadow:0 10px 24px rgba(63,81,181,.4); }
+        .btn.small { padding:8px 16px; font-size:.95rem; box-shadow:none; }
+        .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; padding:40px 0 60px; }
+        .hero h1 { font-size:clamp(2rem,4.5vw,3.2rem); line-height:1.15; margin:0 0 12px; }
+        .hero .sub { font-size:1.3rem; color:var(--accent); font-weight:600; margin:0 0 16px; }
+        .hero p { color:var(--muted); font-size:1.1rem; }
+        .cta { margin:28px 0 8px; }
+        .cta .hint { display:block; font-size:.9rem; margin-top:10px; }
+        .badges { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-top:24px; }
+        .badges img { height:48px; width:auto; display:block; }
+        /* Google Play badge PNGs (646x250) have locale-specific transparent padding; scale so the visible badge is 48px like the App Store badge. */
+        .badges .play img { height:62.5px; margin:-7.25px 0; }
+        :lang(en) .badges .play img, :lang(mk) .badges .play img, :lang(be) .badges .play img { height:71.4px; margin:-11.7px; }
+        .hero p.social-proof { margin:10px 0 0; font-size:.9rem; font-weight:400; }
+        .hero-shot { text-align:center; }
+        .hero-shot img { width:min(300px,80%); height:auto; border-radius:28px; filter:drop-shadow(0 20px 40px rgba(0,0,0,.25)); }
+        section { padding:48px 0; }
+        h2 { font-size:clamp(1.5rem,3vw,2.1rem); text-align:center; margin:0 0 32px; }
+        .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; }
+        .card { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; }
+        .card .ico { font-size:1.8rem; }
+        .card h3 { margin:8px 0; font-size:1.15rem; }
+        .card p { margin:0; color:var(--muted); }
+        .lead { text-align:center; max-width:720px; margin:0 auto 32px; color:var(--muted); font-size:1.05rem; }
+        .gallery { display:flex; justify-content:center; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:12px; }
+        .gallery figure { flex:0 0 auto; width:240px; margin:0; scroll-snap-align:center; text-align:center; }
+        .gallery img { width:100%; height:auto; border-radius:18px; border:1px solid var(--border); }
+        .gallery figcaption { font-size:.9rem; color:var(--muted); margin-top:8px; }
+        .chips { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; padding:0; list-style:none; }
+        .chips li { background:var(--card); border:1px solid var(--border); border-radius:999px; padding:6px 14px; font-size:.9rem; }
+        .steps { max-width:640px; margin:0 auto; padding-left:1.4em; font-size:1.05rem; }
+        .steps li { margin:8px 0; }
+        .faq { max-width:760px; margin:0 auto; }
+        .faq details { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px 18px; margin-bottom:12px; }
+        .faq summary { cursor:pointer; font-weight:600; }
+        .faq p { color:var(--muted); margin:10px 0 0; }
+        .center { text-align:center; }
+        .note { text-align:center; color:var(--muted); font-size:.95rem; max-width:720px; margin:24px auto 0; }
+        footer { border-top:1px solid var(--border); padding:24px 0 40px; color:var(--muted); font-size:.9rem; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; }
+        @media (max-width:800px) { .hero { grid-template-columns:1fr; text-align:center; padding-top:16px; } .badges { justify-content:center; } .gallery { justify-content:flex-start; } }
+        @media (prefers-reduced-motion: reduce) { .btn { transition:none; } }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header class="nav">
+        <a class="brand" href="/en/">Cyrillic.app</a>
+        <div class="nav-actions">
+            <label>
+                <span hidden>Language</span>
+                <select aria-label="Language" id="language-select">
+                    <option lang="en" value="en" selected>English</option>
+                    <option lang="de" value="de">Deutsch</option>
+                    <option lang="es" value="es">Español</option>
+                    <option lang="fr" value="fr">Français</option>
+                    <option lang="hr" value="hr">Hrvatski</option>
+                    <option lang="it" value="it">Italiano</option>
+                    <option lang="pt" value="pt">Português</option>
+                    <option lang="ru" value="ru">Русский</option>
+                    <option lang="sr" value="sr">Српски</option>
+                    <option lang="uk" value="uk">Українська</option>
+                    <option lang="be" value="be">Беларуская</option>
+                    <option lang="bg" value="bg">Български</option>
+                    <option lang="mk" value="mk">Македонски</option>
+                </select>
+            </label>
+            <a class="btn small" href="/en/convert/">Open converter</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div>
+                <h1>Learn, read and convert Cyrillic</h1>
+                <p class="sub">Convert, read and learn Cyrillic</p>
+                <p>Convert text between <strong>Latin</strong> and <strong>Cyrillic</strong> alphabets instantly. This tool supports multiple Slavic languages and internationally recognized transliteration standards.</p>
+                <div class="cta">
+                    <a class="btn" href="/en/convert/">Open converter →</a>
+                    <span class="hint">Free in your browser – no installation, no sign-up.</span>
+                </div>
+                <div class="badges">
+                    <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969" rel="noopener" target="_blank"><img alt="Download on the App Store" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
+                    <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=en" rel="noopener" target="_blank"><img alt="Get it on Google Play" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="184"></a>
+                </div>
+                <p class="social-proof">★ 4.3 · 50,000+ downloads on Google Play</p>
+            </div>
+            <div class="hero-shot">
+                <img alt="Convert text in both directions" fetchpriority="high" height="1200" src="/assets/screenshots/en/01_convert.jpg" width="540">
+            </div>
+        </div>
+
+        <section>
+            <h2>Why use this converter?</h2>
+            <div class="grid">
+                <div class="card"><div aria-hidden="true" class="ico">⇄</div><h3>Both directions</h3><p>Convert Latin to Cyrillic and Cyrillic to Latin with a single tap, including digraphs such as lj, nj and dž.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🌍</div><h3>Many Slavic languages</h3><p>Serbian, Russian, Ukrainian, Bulgarian, Belarusian, Macedonian and Montenegrin, plus the ISO 9:1995 standard.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🔒</div><h3>Free and private</h3><p>Runs entirely in your browser. Your text is never uploaded to a server.</p></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Supported languages and standards</h2>
+            <ul class="chips">
+                <li>Serbian</li>
+                <li>Serbian – ISO 9:1995</li>
+                <li>Russian – ISO 9:1995</li>
+                <li>Ukrainian – ISO 9:1995</li>
+                <li>Bulgarian – ISO 9:1995</li>
+                <li>Belarusian – ISO 9:1995</li>
+                <li>Macedonian</li>
+                <li>Macedonian – ISO 9:1995</li>
+                <li>Montenegrin</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Guides</h2>
+            <ul class="chips">
+                <li><a href="/en/russian-transliteration/">Russian transliteration (ISO 9)</a></li>
+                <li><a href="/en/serbian-latin-to-cyrillic/">Serbian Latin to Cyrillic</a></li>
+                <li><a href="/en/ukrainian-transliteration/">Ukrainian transliteration (ISO 9)</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Get more in the app</h2>
+            <p class="lead">Want to read and write Cyrillic yourself? The Android and iOS app goes beyond conversion.</p>
+            <div class="grid">
+                <div class="card"><div aria-hidden="true" class="ico">🎓</div><h3>Learn Cyrillic letters</h3><p>Learn Serbian, Russian, Ukrainian and more alphabets step by step with small letter sets, flashcards and recognition quizzes, in both directions.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🔤</div><h3>Alphabet overview</h3><p>See the full alphabet side by side in Latin and Cyrillic script, with filters for script and upper/lower case.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🛠️</div><h3>Custom conversion table</h3><p>Create your own conversion table for personalized transliteration rules.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">⭐</div><h3>History, favorites and sharing</h3><p>Revisit recent conversions, save favorites and share results directly to WhatsApp, Telegram and other apps.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">✈️</div><h3>Offline and ad-free</h3><p>Works fully offline with no ads, supports dark mode and copies results to the clipboard automatically.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">⌨️</div><h3>Letter picker</h3><p>No Cyrillic keyboard? Tap letters from the built-in picker; they are inserted right at the cursor.</p></div>
+                <div class="card"><div aria-hidden="true" class="ico">🏆</div><h3>Track your progress</h3><p>Unlock letter sets one by one, try Mini Review and Mastery Test, train in reverse mode and beat your best score, accuracy and time.</p></div>
+            </div>
+            <p class="note">Free to download. Unlimited conversions, all learning features and the custom conversion table are unlocked with a one-time in-app purchase.</p>
+        </section>
+
+        <section>
+            <h2>Take a look at the app</h2>
+            <div class="gallery">
+                <figure><img alt="Convert text in both directions" decoding="async" height="1200" loading="lazy" src="/assets/screenshots/en/01_convert.jpg" width="540"><figcaption>Convert text in both directions</figcaption></figure>
+                <figure><img alt="Alphabet overview" decoding="async" height="1200" loading="lazy" src="/assets/screenshots/en/02_alphabet.jpg" width="540"><figcaption>Alphabet overview</figcaption></figure>
+                <figure><img alt="Learn letters with quizzes" decoding="async" height="1200" loading="lazy" src="/assets/screenshots/en/03_learn.jpg" width="540"><figcaption>Learn letters with quizzes</figcaption></figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>How it works</h2>
+            <ol class="steps">
+                <li>Choose your language or transliteration standard.</li>
+                <li>Type or paste your text in Latin or Cyrillic.</li>
+                <li>Copy the converted result and use it anywhere.</li>
+            </ol>
+            <p class="center" style="margin-top:32px"><a class="btn" href="/en/convert/">Open converter →</a></p>
+        </section>
+
+        <section>
+            <h2>Frequently asked questions</h2>
+            <div class="faq">
+                <details><summary>Is the Latin to Cyrillic converter free?</summary><p>Yes. The web version is free to use, and apps for Android and iOS are also available.</p></details>
+                <details><summary>Which languages are supported?</summary><p>Serbian, Russian, Ukrainian, Bulgarian, Belarusian, Macedonian and Montenegrin, including ISO 9:1995 transliteration.</p></details>
+                <details><summary>Can I convert Cyrillic back to Latin?</summary><p>Yes. The converter works in both directions: Latin to Cyrillic and Cyrillic to Latin.</p></details>
+                <details><summary>Is my text sent to a server?</summary><p>No. The conversion happens locally in your browser, so your text stays on your device.</p></details>
+                <details><summary>Can I learn the Cyrillic alphabet?</summary><p>Yes, with the app for Android and iOS. It includes an alphabet overview, flashcards and quizzes for every supported alphabet. The first Letter Set is free; all learning features are unlocked with a one-time in-app purchase.</p></details>
+            </div>
+        </section>
+
+        <section>
+            <h2>Privacy</h2>
+            <p class="lead">The app collects no personal data and works without an account. <a href="/en/privacy/">Read the privacy policy</a></p>
+            <p class="note">Developed in the EU 🇪🇺</p>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p class="lead">Questions, feedback or found a transliteration error? <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#121;&#114;&#105;&#108;&#108;&#105;&#99;&#64;&#116;&#114;&#111;&#103;&#101;&#114;&#46;&#97;&#112;&#112;">Email us</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <span><a href="https://michaeltroger.com">© <span id="copyright-year"></span> Michael Troger</a></span>
+        <span><a href="https://michaeltroger.com/imprint">Imprint</a> · <a href="https://michaeltroger.com/privacy">Privacy Policy</a></span>
+    </footer>
+</div>
+<script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+    // Remember an explicitly chosen language so the root page redirects there next time.
+    document.getElementById("language-select").addEventListener("change", function () {
+        try { localStorage.setItem("preferredLocale", this.value); } catch (e) {}
+        location.href = "/" + this.value + "/";
+    });
+</script>
+</body>
+</html>
