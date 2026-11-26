@@ -112,8 +112,13 @@
         .gallery figure { flex:0 0 auto; width:240px; margin:0; scroll-snap-align:center; text-align:center; }
         .gallery img { width:100%; height:auto; border-radius:18px; border:1px solid var(--border); }
         .gallery figcaption { font-size:.9rem; color:var(--muted); margin-top:8px; }
+        .language-groups { max-width:860px; margin:0 auto; padding:0; list-style:none; }
+        .language-groups > li { padding:16px 0; border-top:1px solid var(--border); }
+        .language-groups > li:first-child { border-top:0; }
+        .language-groups h3 { margin:0 0 8px; text-align:center; font-size:1rem; color:var(--muted); }
         .chips { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; padding:0; list-style:none; }
-        .chips li { background:var(--card); border:1px solid var(--border); border-radius:999px; padding:6px 14px; font-size:.9rem; }
+        .chips li { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:6px 14px; font-size:.9rem; }
+        .one-way { color:var(--muted); font-size:.82em; }
         .steps { max-width:640px; margin:0 auto; padding-left:1.4em; font-size:1.05rem; }
         .steps li { margin:8px 0; }
         .faq { max-width:760px; margin:0 auto; }
@@ -186,30 +191,14 @@
 
         <section>
             <h2>Langues et normes prises en charge</h2>
-            <ul class="chips">
-                <li>Serbe</li>
-                <li>Serbe – ISO 9:1995</li>
-                <li>Biélorusse – ISO 9:1995</li>
-                <li>Biélorusse – GOST 7.79-2000, système B</li>
-                <li>Biélorusse – Instruction 2007 (Cyrillique → latin uniquement)</li>
-                <li>Biélorusse – Instruction 2023 (Cyrillique → latin uniquement)</li>
-                <li>Bulgare – ISO 9:1995</li>
-                <li>Bulgare – GOST 7.79-2000, système B</li>
-                <li>Bulgare – Système Streamlined (2009) (Cyrillique → latin uniquement)</li>
-                <li>Macédonien</li>
-                <li>Macédonien – ISO 9:1995</li>
-                <li>Macédonien – GOST 7.79-2000, système B</li>
-                <li>Monténégrin</li>
-                <li>Russe – ISO 9:1995</li>
-                <li>Russe – GOST R 7.0.34-2014 (Cyrillique → latin uniquement)</li>
-                <li>Russe – GOST 7.79-2000, système B</li>
-                <li>Russe – BGN/PCGN 1947 (Cyrillique → latin uniquement)</li>
-                <li>Russe – ICAO Doc 9303 (Cyrillique → latin uniquement)</li>
-                <li>Ukrainien – ISO 9:1995</li>
-                <li>Ukrainien – GOST 7.79-2000, système B</li>
-                <li>Ukrainien – KMU Resolution No. 55 (2010) (Cyrillique → latin uniquement)</li>
-                <li>Ukrainien – DSTU 9112:2021, système A</li>
-                <li>Ukrainien – DSTU 9112:2021, système B</li>
+            <ul class="language-groups">
+                <li><h3>Serbe</h3><ul class="chips"><li>Serbe</li><li>Serbe – ISO 9:1995</li></ul></li>
+                <li><h3>Biélorusse</h3><ul class="chips"><li>Biélorusse – ISO 9:1995</li><li>Biélorusse – GOST 7.79-2000, système B</li><li>Biélorusse – Instruction 2007 <span class="one-way">(Cyrillique → latin uniquement)</span></li><li>Biélorusse – Instruction 2023 <span class="one-way">(Cyrillique → latin uniquement)</span></li></ul></li>
+                <li><h3>Bulgare</h3><ul class="chips"><li>Bulgare – ISO 9:1995</li><li>Bulgare – GOST 7.79-2000, système B</li><li>Bulgare – Système Streamlined (2009) <span class="one-way">(Cyrillique → latin uniquement)</span></li></ul></li>
+                <li><h3>Macédonien</h3><ul class="chips"><li>Macédonien</li><li>Macédonien – ISO 9:1995</li><li>Macédonien – GOST 7.79-2000, système B</li></ul></li>
+                <li><h3>Monténégrin</h3><ul class="chips"><li>Monténégrin</li></ul></li>
+                <li><h3>Russe</h3><ul class="chips"><li>Russe – ISO 9:1995</li><li>Russe – GOST R 7.0.34-2014 <span class="one-way">(Cyrillique → latin uniquement)</span></li><li>Russe – GOST 7.79-2000, système B</li><li>Russe – BGN/PCGN 1947 <span class="one-way">(Cyrillique → latin uniquement)</span></li><li>Russe – ICAO Doc 9303 <span class="one-way">(Cyrillique → latin uniquement)</span></li></ul></li>
+                <li><h3>Ukrainien</h3><ul class="chips"><li>Ukrainien – ISO 9:1995</li><li>Ukrainien – GOST 7.79-2000, système B</li><li>Ukrainien – KMU Resolution No. 55 (2010) <span class="one-way">(Cyrillique → latin uniquement)</span></li><li>Ukrainien – DSTU 9112:2021, système A</li><li>Ukrainien – DSTU 9112:2021, système B</li></ul></li>
             </ul>
         </section>
 

@@ -112,8 +112,13 @@
         .gallery figure { flex:0 0 auto; width:240px; margin:0; scroll-snap-align:center; text-align:center; }
         .gallery img { width:100%; height:auto; border-radius:18px; border:1px solid var(--border); }
         .gallery figcaption { font-size:.9rem; color:var(--muted); margin-top:8px; }
+        .language-groups { max-width:860px; margin:0 auto; padding:0; list-style:none; }
+        .language-groups > li { padding:16px 0; border-top:1px solid var(--border); }
+        .language-groups > li:first-child { border-top:0; }
+        .language-groups h3 { margin:0 0 8px; text-align:center; font-size:1rem; color:var(--muted); }
         .chips { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; padding:0; list-style:none; }
-        .chips li { background:var(--card); border:1px solid var(--border); border-radius:999px; padding:6px 14px; font-size:.9rem; }
+        .chips li { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:6px 14px; font-size:.9rem; }
+        .one-way { color:var(--muted); font-size:.82em; }
         .steps { max-width:640px; margin:0 auto; padding-left:1.4em; font-size:1.05rem; }
         .steps li { margin:8px 0; }
         .faq { max-width:760px; margin:0 auto; }
@@ -186,30 +191,14 @@
 
         <section>
             <h2>Podržani jezici i standardi</h2>
-            <ul class="chips">
-                <li>Srpski</li>
-                <li>Srpski – ISO 9:1995</li>
-                <li>Bjeloruski – ISO 9:1995</li>
-                <li>Bjeloruski – GOST 7.79-2000, sustav B</li>
-                <li>Bjeloruski – Instruction 2007 (Samo ćirilica → latinica)</li>
-                <li>Bjeloruski – Instruction 2023 (Samo ćirilica → latinica)</li>
-                <li>Bugarski – ISO 9:1995</li>
-                <li>Bugarski – GOST 7.79-2000, sustav B</li>
-                <li>Bugarski – Sustav Streamlined (2009) (Samo ćirilica → latinica)</li>
-                <li>Makedonski</li>
-                <li>Makedonski – ISO 9:1995</li>
-                <li>Makedonski – GOST 7.79-2000, sustav B</li>
-                <li>Crnogorski</li>
-                <li>Ruski – ISO 9:1995</li>
-                <li>Ruski – GOST R 7.0.34-2014 (Samo ćirilica → latinica)</li>
-                <li>Ruski – GOST 7.79-2000, sustav B</li>
-                <li>Ruski – BGN/PCGN 1947 (Samo ćirilica → latinica)</li>
-                <li>Ruski – ICAO Doc 9303 (Samo ćirilica → latinica)</li>
-                <li>Ukrajinski – ISO 9:1995</li>
-                <li>Ukrajinski – GOST 7.79-2000, sustav B</li>
-                <li>Ukrajinski – KMU Resolution No. 55 (2010) (Samo ćirilica → latinica)</li>
-                <li>Ukrajinski – DSTU 9112:2021, sustav A</li>
-                <li>Ukrajinski – DSTU 9112:2021, sustav B</li>
+            <ul class="language-groups">
+                <li><h3>Srpski</h3><ul class="chips"><li>Srpski</li><li>Srpski – ISO 9:1995</li></ul></li>
+                <li><h3>Bjeloruski</h3><ul class="chips"><li>Bjeloruski – ISO 9:1995</li><li>Bjeloruski – GOST 7.79-2000, sustav B</li><li>Bjeloruski – Instruction 2007 <span class="one-way">(Samo ćirilica → latinica)</span></li><li>Bjeloruski – Instruction 2023 <span class="one-way">(Samo ćirilica → latinica)</span></li></ul></li>
+                <li><h3>Bugarski</h3><ul class="chips"><li>Bugarski – ISO 9:1995</li><li>Bugarski – GOST 7.79-2000, sustav B</li><li>Bugarski – Sustav Streamlined (2009) <span class="one-way">(Samo ćirilica → latinica)</span></li></ul></li>
+                <li><h3>Makedonski</h3><ul class="chips"><li>Makedonski</li><li>Makedonski – ISO 9:1995</li><li>Makedonski – GOST 7.79-2000, sustav B</li></ul></li>
+                <li><h3>Crnogorski</h3><ul class="chips"><li>Crnogorski</li></ul></li>
+                <li><h3>Ruski</h3><ul class="chips"><li>Ruski – ISO 9:1995</li><li>Ruski – GOST R 7.0.34-2014 <span class="one-way">(Samo ćirilica → latinica)</span></li><li>Ruski – GOST 7.79-2000, sustav B</li><li>Ruski – BGN/PCGN 1947 <span class="one-way">(Samo ćirilica → latinica)</span></li><li>Ruski – ICAO Doc 9303 <span class="one-way">(Samo ćirilica → latinica)</span></li></ul></li>
+                <li><h3>Ukrajinski</h3><ul class="chips"><li>Ukrajinski – ISO 9:1995</li><li>Ukrajinski – GOST 7.79-2000, sustav B</li><li>Ukrajinski – KMU Resolution No. 55 (2010) <span class="one-way">(Samo ćirilica → latinica)</span></li><li>Ukrajinski – DSTU 9112:2021, sustav A</li><li>Ukrajinski – DSTU 9112:2021, sustav B</li></ul></li>
             </ul>
         </section>
 

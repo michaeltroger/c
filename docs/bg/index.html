@@ -112,8 +112,13 @@
         .gallery figure { flex:0 0 auto; width:240px; margin:0; scroll-snap-align:center; text-align:center; }
         .gallery img { width:100%; height:auto; border-radius:18px; border:1px solid var(--border); }
         .gallery figcaption { font-size:.9rem; color:var(--muted); margin-top:8px; }
+        .language-groups { max-width:860px; margin:0 auto; padding:0; list-style:none; }
+        .language-groups > li { padding:16px 0; border-top:1px solid var(--border); }
+        .language-groups > li:first-child { border-top:0; }
+        .language-groups h3 { margin:0 0 8px; text-align:center; font-size:1rem; color:var(--muted); }
         .chips { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; padding:0; list-style:none; }
-        .chips li { background:var(--card); border:1px solid var(--border); border-radius:999px; padding:6px 14px; font-size:.9rem; }
+        .chips li { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:6px 14px; font-size:.9rem; }
+        .one-way { color:var(--muted); font-size:.82em; }
         .steps { max-width:640px; margin:0 auto; padding-left:1.4em; font-size:1.05rem; }
         .steps li { margin:8px 0; }
         .faq { max-width:760px; margin:0 auto; }
@@ -186,30 +191,14 @@
 
         <section>
             <h2>Поддържани езици и стандарти</h2>
-            <ul class="chips">
-                <li>Сръбски</li>
-                <li>Сръбски – ISO 9:1995</li>
-                <li>Беларуски – ISO 9:1995</li>
-                <li>Беларуски – GOST 7.79-2000, система B</li>
-                <li>Беларуски – Instruction 2007 (Само кирилица → латиница)</li>
-                <li>Беларуски – Instruction 2023 (Само кирилица → латиница)</li>
-                <li>Български – ISO 9:1995</li>
-                <li>Български – GOST 7.79-2000, система B</li>
-                <li>Български – Система Streamlined (2009) (Само кирилица → латиница)</li>
-                <li>Македонски</li>
-                <li>Македонски – ISO 9:1995</li>
-                <li>Македонски – GOST 7.79-2000, система B</li>
-                <li>Черногорски</li>
-                <li>Руски – ISO 9:1995</li>
-                <li>Руски – GOST R 7.0.34-2014 (Само кирилица → латиница)</li>
-                <li>Руски – GOST 7.79-2000, система B</li>
-                <li>Руски – BGN/PCGN 1947 (Само кирилица → латиница)</li>
-                <li>Руски – ICAO Doc 9303 (Само кирилица → латиница)</li>
-                <li>Украински – ISO 9:1995</li>
-                <li>Украински – GOST 7.79-2000, система B</li>
-                <li>Украински – KMU Resolution No. 55 (2010) (Само кирилица → латиница)</li>
-                <li>Украински – DSTU 9112:2021, система A</li>
-                <li>Украински – DSTU 9112:2021, система B</li>
+            <ul class="language-groups">
+                <li><h3>Сръбски</h3><ul class="chips"><li>Сръбски</li><li>Сръбски – ISO 9:1995</li></ul></li>
+                <li><h3>Беларуски</h3><ul class="chips"><li>Беларуски – ISO 9:1995</li><li>Беларуски – GOST 7.79-2000, система B</li><li>Беларуски – Instruction 2007 <span class="one-way">(Само кирилица → латиница)</span></li><li>Беларуски – Instruction 2023 <span class="one-way">(Само кирилица → латиница)</span></li></ul></li>
+                <li><h3>Български</h3><ul class="chips"><li>Български – ISO 9:1995</li><li>Български – GOST 7.79-2000, система B</li><li>Български – Система Streamlined (2009) <span class="one-way">(Само кирилица → латиница)</span></li></ul></li>
+                <li><h3>Македонски</h3><ul class="chips"><li>Македонски</li><li>Македонски – ISO 9:1995</li><li>Македонски – GOST 7.79-2000, система B</li></ul></li>
+                <li><h3>Черногорски</h3><ul class="chips"><li>Черногорски</li></ul></li>
+                <li><h3>Руски</h3><ul class="chips"><li>Руски – ISO 9:1995</li><li>Руски – GOST R 7.0.34-2014 <span class="one-way">(Само кирилица → латиница)</span></li><li>Руски – GOST 7.79-2000, система B</li><li>Руски – BGN/PCGN 1947 <span class="one-way">(Само кирилица → латиница)</span></li><li>Руски – ICAO Doc 9303 <span class="one-way">(Само кирилица → латиница)</span></li></ul></li>
+                <li><h3>Украински</h3><ul class="chips"><li>Украински – ISO 9:1995</li><li>Украински – GOST 7.79-2000, система B</li><li>Украински – KMU Resolution No. 55 (2010) <span class="one-way">(Само кирилица → латиница)</span></li><li>Украински – DSTU 9112:2021, система A</li><li>Украински – DSTU 9112:2021, система B</li></ul></li>
             </ul>
         </section>
 

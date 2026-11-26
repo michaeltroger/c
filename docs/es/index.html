@@ -112,8 +112,13 @@
         .gallery figure { flex:0 0 auto; width:240px; margin:0; scroll-snap-align:center; text-align:center; }
         .gallery img { width:100%; height:auto; border-radius:18px; border:1px solid var(--border); }
         .gallery figcaption { font-size:.9rem; color:var(--muted); margin-top:8px; }
+        .language-groups { max-width:860px; margin:0 auto; padding:0; list-style:none; }
+        .language-groups > li { padding:16px 0; border-top:1px solid var(--border); }
+        .language-groups > li:first-child { border-top:0; }
+        .language-groups h3 { margin:0 0 8px; text-align:center; font-size:1rem; color:var(--muted); }
         .chips { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; padding:0; list-style:none; }
-        .chips li { background:var(--card); border:1px solid var(--border); border-radius:999px; padding:6px 14px; font-size:.9rem; }
+        .chips li { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:6px 14px; font-size:.9rem; }
+        .one-way { color:var(--muted); font-size:.82em; }
         .steps { max-width:640px; margin:0 auto; padding-left:1.4em; font-size:1.05rem; }
         .steps li { margin:8px 0; }
         .faq { max-width:760px; margin:0 auto; }
@@ -186,30 +191,14 @@
 
         <section>
             <h2>Idiomas y estándares compatibles</h2>
-            <ul class="chips">
-                <li>Serbio</li>
-                <li>Serbio – ISO 9:1995</li>
-                <li>Bielorruso – ISO 9:1995</li>
-                <li>Bielorruso – GOST 7.79-2000, Sistema B</li>
-                <li>Bielorruso – Instruction 2007 (Solo cirílico → latino)</li>
-                <li>Bielorruso – Instruction 2023 (Solo cirílico → latino)</li>
-                <li>Búlgaro – ISO 9:1995</li>
-                <li>Búlgaro – GOST 7.79-2000, Sistema B</li>
-                <li>Búlgaro – Sistema Streamlined (2009) (Solo cirílico → latino)</li>
-                <li>Macedonio</li>
-                <li>Macedonio – ISO 9:1995</li>
-                <li>Macedonio – GOST 7.79-2000, Sistema B</li>
-                <li>Montenegrino</li>
-                <li>Ruso – ISO 9:1995</li>
-                <li>Ruso – GOST R 7.0.34-2014 (Solo cirílico → latino)</li>
-                <li>Ruso – GOST 7.79-2000, Sistema B</li>
-                <li>Ruso – BGN/PCGN 1947 (Solo cirílico → latino)</li>
-                <li>Ruso – ICAO Doc 9303 (Solo cirílico → latino)</li>
-                <li>Ucraniano – ISO 9:1995</li>
-                <li>Ucraniano – GOST 7.79-2000, Sistema B</li>
-                <li>Ucraniano – KMU Resolution No. 55 (2010) (Solo cirílico → latino)</li>
-                <li>Ucraniano – DSTU 9112:2021, Sistema A</li>
-                <li>Ucraniano – DSTU 9112:2021, Sistema B</li>
+            <ul class="language-groups">
+                <li><h3>Serbio</h3><ul class="chips"><li>Serbio</li><li>Serbio – ISO 9:1995</li></ul></li>
+                <li><h3>Bielorruso</h3><ul class="chips"><li>Bielorruso – ISO 9:1995</li><li>Bielorruso – GOST 7.79-2000, Sistema B</li><li>Bielorruso – Instruction 2007 <span class="one-way">(Solo cirílico → latino)</span></li><li>Bielorruso – Instruction 2023 <span class="one-way">(Solo cirílico → latino)</span></li></ul></li>
+                <li><h3>Búlgaro</h3><ul class="chips"><li>Búlgaro – ISO 9:1995</li><li>Búlgaro – GOST 7.79-2000, Sistema B</li><li>Búlgaro – Sistema Streamlined (2009) <span class="one-way">(Solo cirílico → latino)</span></li></ul></li>
+                <li><h3>Macedonio</h3><ul class="chips"><li>Macedonio</li><li>Macedonio – ISO 9:1995</li><li>Macedonio – GOST 7.79-2000, Sistema B</li></ul></li>
+                <li><h3>Montenegrino</h3><ul class="chips"><li>Montenegrino</li></ul></li>
+                <li><h3>Ruso</h3><ul class="chips"><li>Ruso – ISO 9:1995</li><li>Ruso – GOST R 7.0.34-2014 <span class="one-way">(Solo cirílico → latino)</span></li><li>Ruso – GOST 7.79-2000, Sistema B</li><li>Ruso – BGN/PCGN 1947 <span class="one-way">(Solo cirílico → latino)</span></li><li>Ruso – ICAO Doc 9303 <span class="one-way">(Solo cirílico → latino)</span></li></ul></li>
+                <li><h3>Ucraniano</h3><ul class="chips"><li>Ucraniano – ISO 9:1995</li><li>Ucraniano – GOST 7.79-2000, Sistema B</li><li>Ucraniano – KMU Resolution No. 55 (2010) <span class="one-way">(Solo cirílico → latino)</span></li><li>Ucraniano – DSTU 9112:2021, Sistema A</li><li>Ucraniano – DSTU 9112:2021, Sistema B</li></ul></li>
             </ul>
         </section>
 
