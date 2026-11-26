@@ -46,7 +46,7 @@
           "url": "https://cyrillic.app/es/convert/",
           "description": "Convierte latino a cirílico y cirílico a latino en línea gratis. Serbio, ruso, ucraniano, búlgaro, bielorruso, macedonio y montenegrino, incl. ISO 9. Funciona en tu navegador, sin registro.",
           "image": "https://cyrillic.app/assets/screenshots/es/01_convert.jpg",
-          "featureList": "Convierte de latino a cirílico y de cirílico a latino con un toque, incluidos dígrafos como lj, nj y dž. Serbio, ruso, ucraniano, búlgaro, bielorruso, macedonio y montenegrino, además del estándar ISO 9:1995. Funciona completamente en tu navegador. Tu texto nunca se envía a un servidor.",
+          "featureList": "Convierte entre latino y cirílico cuando el estándar seleccionado admite ambas direcciones. Los estándares unidireccionales convierten solo del cirílico al latino; también se admiten dígrafos serbios como lj, nj y dž. Transliteración serbia, bielorrusa, búlgara, macedonia, montenegrina, rusa y ucraniana. Incluye ISO 9, GOST 7.79 System B, GOST R 7.0.34-2014, BGN/PCGN 1947, ICAO Doc 9303, la Resolución KMU n.º 55, DSTU 9112, el sistema búlgaro Streamlined y las instrucciones bielorrusas de 2007/2023. Funciona completamente en tu navegador. Tu texto nunca se envía a un servidor.",
           "inLanguage": "es",
           "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "Web",
@@ -96,8 +96,8 @@
         })();
     </script>
     <script src="/script.js?v=8bb267725635" defer></script>
-    <link as="script" href="/app.js?v=33d34382a354" rel="preload">
-    <script defer src="/app.js?v=33d34382a354"></script>
+    <link as="script" href="/app.js?v=4c7401bd2c3c" rel="preload">
+    <script defer src="/app.js?v=4c7401bd2c3c"></script>
 </head>
 <body>
 
@@ -144,14 +144,28 @@
     <h2>Idiomas y estándares compatibles</h2>
     <ul class="languages">
         <li>Serbio</li>
-        <li>Serbio — ISO 9:1995</li>
-        <li>Ruso — ISO 9:1995</li>
-        <li>Ucraniano — ISO 9:1995</li>
-        <li>Búlgaro — ISO 9:1995</li>
-        <li>Bielorruso — ISO 9:1995</li>
+        <li>Serbio – ISO 9:1995</li>
+        <li>Bielorruso – ISO 9:1995</li>
+        <li>Bielorruso – GOST 7.79-2000, Sistema B</li>
+        <li>Bielorruso – Instruction 2007 (Solo cirílico → latino)</li>
+        <li>Bielorruso – Instruction 2023 (Solo cirílico → latino)</li>
+        <li>Búlgaro – ISO 9:1995</li>
+        <li>Búlgaro – GOST 7.79-2000, Sistema B</li>
+        <li>Búlgaro – Sistema Streamlined (2009) (Solo cirílico → latino)</li>
         <li>Macedonio</li>
-        <li>Macedonio — ISO 9:1995</li>
+        <li>Macedonio – ISO 9:1995</li>
+        <li>Macedonio – GOST 7.79-2000, Sistema B</li>
         <li>Montenegrino</li>
+        <li>Ruso – ISO 9:1995</li>
+        <li>Ruso – GOST R 7.0.34-2014 (Solo cirílico → latino)</li>
+        <li>Ruso – GOST 7.79-2000, Sistema B</li>
+        <li>Ruso – BGN/PCGN 1947 (Solo cirílico → latino)</li>
+        <li>Ruso – ICAO Doc 9303 (Solo cirílico → latino)</li>
+        <li>Ucraniano – ISO 9:1995</li>
+        <li>Ucraniano – GOST 7.79-2000, Sistema B</li>
+        <li>Ucraniano – KMU Resolution No. 55 (2010) (Solo cirílico → latino)</li>
+        <li>Ucraniano – DSTU 9112:2021, Sistema A</li>
+        <li>Ucraniano – DSTU 9112:2021, Sistema B</li>
     </ul>
     <section class="content">
         <h2>Cómo funciona</h2>
@@ -161,7 +175,7 @@
             <li>Copia el resultado y úsalo donde quieras.</li>
         </ol>
         <h2>Cómo se corresponden las letras latinas y cirílicas</h2>
-        <p>Cada idioma tiene sus propias reglas. En serbio, cada letra latina tiene exactamente un equivalente cirílico, incluidos los dígrafos lj → љ, nj → њ y dž → џ, así como đ → ђ, ć → ћ, č → ч, š → ш y ž → ж. El macedonio usa ѓ, ќ, ѕ y џ, y el montenegrino añade ś → с́ y ź → з́. Para ruso, ucraniano, búlgaro y bielorruso, el conversor utiliza la norma ISO 9:1995, que asigna a cada letra cirílica exactamente una letra latina (p. ej. щ → ŝ, ж → ž, я → â), de modo que el texto puede convertirse de vuelta sin pérdidas.</p>
+        <p>Cada idioma tiene sus propias reglas. En serbio, cada letra latina tiene exactamente un equivalente cirílico, incluidos los dígrafos lj → љ, nj → њ y dž → џ, así como đ → ђ, ć → ћ, č → ч, š → ш y ž → ж. El macedonio usa ѓ, ќ, ѕ y џ, y el montenegrino añade ś → с́ y ź → з́. Para ruso, ucraniano, búlgaro y bielorruso puedes elegir entre varios estándares, como ISO 9:1995, GOST 7.79 System B, BGN/PCGN y sistemas nacionales. ISO 9:1995 asigna a cada letra cirílica exactamente una letra latina (p. ej. щ → ŝ, ж → ž, я → â), de modo que el texto puede convertirse de vuelta sin pérdidas; algunos otros estándares solo convierten del cirílico al latino.</p>
         <h2>Preguntas frecuentes</h2>
         <h3>¿Cómo escribo en cirílico sin teclado cirílico?</h3>
         <p>Escribe el texto en letras latinas con tu teclado habitual y elige latino a cirílico. El conversor sustituye cada letra por su equivalente cirílico para que puedas copiar el resultado donde quieras.</p>

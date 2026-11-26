@@ -46,7 +46,7 @@
           "url": "https://cyrillic.app/en/convert/",
           "description": "Convert Latin to Cyrillic and Cyrillic to Latin online for free. Serbian, Russian, Ukrainian, Bulgarian, Belarusian, Macedonian and Montenegrin, incl. ISO 9. Runs in your browser, no sign-up.",
           "image": "https://cyrillic.app/assets/screenshots/en/01_convert.jpg",
-          "featureList": "Convert Latin to Cyrillic and Cyrillic to Latin with a single tap, including digraphs such as lj, nj and dž. Serbian, Russian, Ukrainian, Bulgarian, Belarusian, Macedonian and Montenegrin, plus the ISO 9:1995 standard. Runs entirely in your browser. Your text is never uploaded to a server.",
+          "featureList": "Convert between Latin and Cyrillic where the selected standard supports both directions. One-way standards convert Cyrillic to Latin only; Serbian digraphs such as lj, nj and dž are also supported. Serbian, Belarusian, Bulgarian, Macedonian, Montenegrin, Russian and Ukrainian transliteration. Standards include ISO 9, GOST 7.79 System B, GOST R 7.0.34-2014, BGN/PCGN 1947, ICAO Doc 9303, KMU Resolution No. 55, DSTU 9112, the Bulgarian Streamlined System and Belarusian Instructions (2007/2023). Runs entirely in your browser. Your text is never uploaded to a server.",
           "inLanguage": "en",
           "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "Web",
@@ -96,8 +96,8 @@
         })();
     </script>
     <script src="/script.js?v=8bb267725635" defer></script>
-    <link as="script" href="/app.js?v=33d34382a354" rel="preload">
-    <script defer src="/app.js?v=33d34382a354"></script>
+    <link as="script" href="/app.js?v=4c7401bd2c3c" rel="preload">
+    <script defer src="/app.js?v=4c7401bd2c3c"></script>
 </head>
 <body>
 
@@ -145,13 +145,27 @@
     <ul class="languages">
         <li>Serbian</li>
         <li>Serbian – ISO 9:1995</li>
-        <li>Russian – ISO 9:1995</li>
-        <li>Ukrainian – ISO 9:1995</li>
-        <li>Bulgarian – ISO 9:1995</li>
         <li>Belarusian – ISO 9:1995</li>
+        <li>Belarusian – GOST 7.79-2000 System B</li>
+        <li>Belarusian – Instruction 2007 (Cyrillic → Latin only)</li>
+        <li>Belarusian – Instruction 2023 (Cyrillic → Latin only)</li>
+        <li>Bulgarian – ISO 9:1995</li>
+        <li>Bulgarian – GOST 7.79-2000 System B</li>
+        <li>Bulgarian – Streamlined System (2009) (Cyrillic → Latin only)</li>
         <li>Macedonian</li>
         <li>Macedonian – ISO 9:1995</li>
+        <li>Macedonian – GOST 7.79-2000 System B</li>
         <li>Montenegrin</li>
+        <li>Russian – ISO 9:1995</li>
+        <li>Russian – GOST R 7.0.34-2014 (Cyrillic → Latin only)</li>
+        <li>Russian – GOST 7.79-2000 System B</li>
+        <li>Russian – BGN/PCGN 1947 (Cyrillic → Latin only)</li>
+        <li>Russian – ICAO Doc 9303 (Cyrillic → Latin only)</li>
+        <li>Ukrainian – ISO 9:1995</li>
+        <li>Ukrainian – GOST 7.79-2000 System B</li>
+        <li>Ukrainian – KMU Resolution No. 55 (2010) (Cyrillic → Latin only)</li>
+        <li>Ukrainian – DSTU 9112:2021, System A</li>
+        <li>Ukrainian – DSTU 9112:2021, System B</li>
     </ul>
     <section class="content">
         <h2>How it works</h2>
@@ -161,7 +175,7 @@
             <li>Copy the converted result and use it anywhere.</li>
         </ol>
         <h2>How Latin letters map to Cyrillic</h2>
-        <p>Each language has its own rules. In Serbian, every Latin letter has exactly one Cyrillic counterpart, including the digraphs lj → љ, nj → њ and dž → џ, as well as đ → ђ, ć → ћ, č → ч, š → ш and ž → ж. Macedonian uses ѓ, ќ, ѕ and џ, and Montenegrin adds ś → с́ and ź → з́. For Russian, Ukrainian, Bulgarian and Belarusian, the converter uses the ISO 9:1995 standard, which maps every Cyrillic letter to exactly one Latin letter (e.g. щ → ŝ, ж → ž, я → â), so text can be converted back without loss.</p>
+        <p>Each language has its own rules. In Serbian, every Latin letter has exactly one Cyrillic counterpart, including the digraphs lj → љ, nj → њ and dž → џ, as well as đ → ђ, ć → ћ, č → ч, š → ш and ž → ж. Macedonian uses ѓ, ќ, ѕ and џ, and Montenegrin adds ś → с́ and ź → з́. For Russian, Ukrainian, Bulgarian and Belarusian, you can choose between several standards, such as ISO 9:1995, GOST 7.79 System B, BGN/PCGN and national systems. ISO 9:1995 maps every Cyrillic letter to exactly one Latin letter (e.g. щ → ŝ, ж → ž, я → â), so text can be converted back without loss; some other standards only convert Cyrillic to Latin.</p>
         <h2>Frequently asked questions</h2>
         <h3>How do I type Cyrillic without a Cyrillic keyboard?</h3>
         <p>Type the text in Latin letters with your normal keyboard and select Latin to Cyrillic. The converter replaces each letter with its Cyrillic equivalent, so you can copy the result anywhere.</p>
