@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Transliteration vs. Transcription vs. Romanization | Cyrillic Latin Transliterator</title>
+    <meta content="Learn the difference between transliteration, romanization, transcription and translation, and see how Russian names change across standards." name="description">
+    <meta content="Michael Troger" name="author">
+    <meta content="index, follow" name="robots">
+    <meta content="#3f51b5" name="theme-color">
+    <meta content="app-id=6758277969" name="apple-itunes-app">
+    <meta content="Transliteration vs. Transcription vs. Romanization | Cyrillic Latin Transliterator" property="og:title">
+    <meta content="Learn the difference between transliteration, romanization, transcription and translation, and see how Russian names change across standards." property="og:description">
+    <meta content="article" property="og:type">
+    <meta content="https://cyrillic.app/en/transliteration-vs-transcription/" property="og:url">
+    <meta content="Cyrillic.app" property="og:site_name">
+    <meta content="https://cyrillic.app/assets/screenshots/en/02_alphabet.jpg" property="og:image">
+    <meta content="summary_large_image" name="twitter:card">
+    <link href="https://cyrillic.app/en/transliteration-vs-transcription/" rel="canonical">
+    <link href="https://cyrillic.app/en/transliteration-vs-transcription/" hreflang="en" rel="alternate">
+    <link href="https://cyrillic.app/de/transliteration-vs-transcription/" hreflang="de" rel="alternate">
+    <link href="https://cyrillic.app/es/transliteration-vs-transcription/" hreflang="es" rel="alternate">
+    <link href="https://cyrillic.app/fr/transliteration-vs-transcription/" hreflang="fr" rel="alternate">
+    <link href="https://cyrillic.app/hr/transliteration-vs-transcription/" hreflang="hr" rel="alternate">
+    <link href="https://cyrillic.app/it/transliteration-vs-transcription/" hreflang="it" rel="alternate">
+    <link href="https://cyrillic.app/pt/transliteration-vs-transcription/" hreflang="pt" rel="alternate">
+    <link href="https://cyrillic.app/ru/transliteration-vs-transcription/" hreflang="ru" rel="alternate">
+    <link href="https://cyrillic.app/sr/transliteration-vs-transcription/" hreflang="sr" rel="alternate">
+    <link href="https://cyrillic.app/uk/transliteration-vs-transcription/" hreflang="uk" rel="alternate">
+    <link href="https://cyrillic.app/be/transliteration-vs-transcription/" hreflang="be" rel="alternate">
+    <link href="https://cyrillic.app/bg/transliteration-vs-transcription/" hreflang="bg" rel="alternate">
+    <link href="https://cyrillic.app/mk/transliteration-vs-transcription/" hreflang="mk" rel="alternate">
+    <link href="https://cyrillic.app/en/transliteration-vs-transcription/" hreflang="x-default" rel="alternate">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "Transliteration, transcription and romanization: what is the difference?",
+          "description": "Learn the difference between transliteration, romanization, transcription and translation, and see how Russian names change across standards.",
+          "inLanguage": "en",
+          "url": "https://cyrillic.app/en/transliteration-vs-transcription/",
+          "author": { "@type": "Person", "name": "Michael Troger", "url": "https://michaeltroger.com" }
+        },
+        {
+          "@type": "FAQPage",
+          "inLanguage": "en",
+          "mainEntity": [
+            { "@type": "Question", "name": "Does the converter translate text or transcribe pronunciation?", "acceptedAnswer": { "@type": "Answer", "text": "No. It converts between scripts according to a selected standard. For example, ISO 9 gives Čehov, while a German pronunciation-based transcription such as Tschechow is not available." } },
+            { "@type": "Question", "name": "Why do standards spell the same name differently?", "acceptedAnswer": { "@type": "Answer", "text": "Each standard follows its own rules and purpose. Чехов becomes Čehov in ISO 9, Chexov in GOST R 7.0.34, and Chekhov in BGN/PCGN 1947." } },
+            { "@type": "Question", "name": "Can I convert Latin text back to Cyrillic?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, with reversible options such as ISO 9 and GOST 7.79 System B for correctly spelled words. Passport and other one-way standards only convert from Cyrillic to Latin." } }
+          ]
+        }
+      ]
+    }
+    </script>
+    <style>
+        :root { --bg:#f7f7fb; --fg:#171a26; --muted:#5a5f73; --card:#fff; --accent:#3f51b5; --accent-fg:#fff; --border:#e2e4ee; }
+        @media (prefers-color-scheme: dark) { :root { --bg:#10121a; --fg:#e8e9f1; --muted:#a4a8bb; --card:#1a1d29; --accent:#9fa8ff; --accent-fg:#10121a; --border:#2a2e3e; } }
+        * { box-sizing:border-box; }
+        body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",Helvetica,Arial,sans-serif; background:var(--bg); color:var(--fg); line-height:1.6; }
+        a { color:var(--accent); }
+        .wrap { max-width:860px; margin:0 auto; padding:0 20px; }
+        header.nav { display:flex; justify-content:space-between; align-items:center; padding:16px 0; gap:12px; flex-wrap:wrap; }
+        .brand { font-weight:700; font-size:1.2rem; text-decoration:none; color:var(--fg); }
+        .nav-actions { display:flex; align-items:center; gap:12px; }
+        select { background:var(--card); color:var(--fg); border:1px solid var(--border); border-radius:8px; padding:6px 10px; font-size:.95rem; }
+        .btn { display:inline-block; background:var(--accent); color:var(--accent-fg); text-decoration:none; font-weight:600; border-radius:999px; padding:14px 28px; font-size:1.1rem; }
+        .btn.small { padding:8px 16px; font-size:.95rem; }
+        @media (max-width:600px) { .header-cta { display:none; } }
+        h1 { font-size:clamp(1.8rem,4vw,2.6rem); line-height:1.2; margin:24px 0 12px; }
+        h2 { font-size:clamp(1.3rem,2.5vw,1.7rem); margin:40px 0 16px; }
+        .intro { font-size:1.15rem; color:var(--muted); }
+        .alphabet { display:grid; grid-template-columns:repeat(auto-fill,minmax(110px,1fr)); gap:8px; padding:0; list-style:none; }
+        .alphabet li { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:8px 12px; display:flex; justify-content:space-between; font-size:1.1rem; }
+        .alphabet .lat { color:var(--accent); font-weight:600; }
+        .alphabet.examples { grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); }
+        .alphabet.examples li { gap:16px; font-size:1rem; }
+        .faq details { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px 18px; margin-bottom:12px; }
+        .faq summary { cursor:pointer; font-weight:600; }
+        .faq p { color:var(--muted); margin:10px 0 0; }
+        .center { text-align:center; margin:40px 0; }
+        .app-box { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; margin:32px 0 40px; text-align:center; }
+        .app-box h2 { margin:0 0 12px; }
+        .app-box p { color:var(--muted); }
+        .badges { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:16px; }
+        .badges img { height:48px; width:auto; display:block; }
+        /* Google Play badge PNGs (646x250) have locale-specific transparent padding; scale so the visible badge is 48px like the App Store badge. */
+        .badges .play img { height:62.5px; margin:-7.25px 0; }
+        :lang(en) .badges .play img, :lang(mk) .badges .play img, :lang(be) .badges .play img { height:71.4px; margin:-11.7px; }
+        .social-proof { font-size:.95rem; }
+        .center .hint { display:block; color:var(--muted); font-size:.9rem; margin-top:8px; }
+        footer { border-top:1px solid var(--border); padding:24px 0 40px; color:var(--muted); font-size:.9rem; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header class="nav">
+        <a class="brand" href="/en/">Cyrillic.app</a>
+        <div class="nav-actions">
+            <label>
+                <span hidden>Language</span>
+                <select aria-label="Language" data-page="transliteration-vs-transcription/" id="language-select">
+                    <option lang="en" value="en" selected>English</option>
+                    <option lang="de" value="de">Deutsch</option>
+                    <option lang="es" value="es">Español</option>
+                    <option lang="fr" value="fr">Français</option>
+                    <option lang="hr" value="hr">Hrvatski</option>
+                    <option lang="it" value="it">Italiano</option>
+                    <option lang="pt" value="pt">Português</option>
+                    <option lang="ru" value="ru">Русский</option>
+                    <option lang="sr" value="sr">Српски</option>
+                    <option lang="uk" value="uk">Українська</option>
+                    <option lang="be" value="be">Беларуская</option>
+                    <option lang="bg" value="bg">Български</option>
+                    <option lang="mk" value="mk">Македонски</option>
+                </select>
+            </label>
+            <a class="btn small header-cta" href="/en/convert/">Open converter</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Transliteration, transcription and romanization: what is the difference?</h1>
+        <p class="intro">These terms are sometimes used interchangeably, but they describe different ways of writing or converting text.</p>
+
+        <p class="center"><a class="btn" href="/en/convert/">Try the converter →</a> <span class="hint">Free in your browser – no installation, no sign-up.</span></p>
+
+        <section class="app-box" id="app">
+            <h2>Convert Cyrillic offline with the app</h2>
+            <p>Convert text offline and without ads, with the letter picker for typing Cyrillic or Latin characters. Want to learn the alphabet too? Flashcards and quizzes are included. Free to download for Android and iOS; all features are unlocked with a one-time in-app purchase.</p>
+            <div class="badges">
+                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_transliteration-vs-transcription" rel="noopener" target="_blank"><img alt="Download on the App Store" height="48" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
+                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=en&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Dtransliteration-vs-transcription" rel="noopener" target="_blank"><img alt="Get it on Google Play" height="71" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="184"></a>
+            </div>
+            <p class="social-proof">★ 4.3 · 50,000+ downloads on Google Play</p>
+        </section>
+
+<h2>How Чехов changes across standards</h2>
+        <ul class="alphabet examples">
+            <li><span>ISO 9:1995 — Чехов</span><span class="lat">Čehov</span></li>
+            <li><span>GOST 7.79 System B — Чехов</span><span class="lat">Chexov</span></li>
+            <li><span>GOST R 7.0.34-2014 — Чехов</span><span class="lat">Chexov</span></li>
+            <li><span>BGN/PCGN 1947 — Чехов</span><span class="lat">Chekhov</span></li>
+            <li><span>ICAO Doc 9303 — Чехов</span><span class="lat">Chekhov</span></li>
+        </ul>
+
+        <h2>Transliteration and romanization</h2>
+        <p>Transliteration maps letters from one script to another according to a defined system. Romanization means writing a language that normally uses another script with Latin letters; some standards are designed for passports, place names or bibliographies and may not be reversible.</p>
+
+        <h2>Transcription and translation</h2>
+        <p>Transcription represents pronunciation, often using spelling conventions from a particular language: Russian Чехов is commonly written Tschechow in German and Chekhov in English. Translation conveys meaning rather than letters or sounds, so Привет becomes Hello. This converter does neither.</p>
+
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+            <details><summary>Does the converter translate text or transcribe pronunciation?</summary><p>No. It converts between scripts according to a selected standard. For example, ISO 9 gives Čehov, while a German pronunciation-based transcription such as Tschechow is not available.</p></details>
+            <details><summary>Why do standards spell the same name differently?</summary><p>Each standard follows its own rules and purpose. Чехов becomes Čehov in ISO 9, Chexov in GOST R 7.0.34, and Chekhov in BGN/PCGN 1947.</p></details>
+            <details><summary>Can I convert Latin text back to Cyrillic?</summary><p>Yes, with reversible options such as ISO 9 and GOST 7.79 System B for correctly spelled words. Passport and other one-way standards only convert from Cyrillic to Latin.</p></details>
+        </div>
+
+        <section class="app-box">
+            <h2>Convert Cyrillic offline with the app</h2>
+            <div class="badges">
+                <a href="https://apps.apple.com/app/cyrillic-to-latin/id6758277969?ct=guide_transliteration-vs-transcription" rel="noopener" target="_blank"><img alt="Download on the App Store" height="48" loading="lazy" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="144"></a>
+                <a class="play" href="https://play.google.com/store/apps/details?id=at.mikenet.serbianlatintocyrillic&amp;hl=en&amp;referrer=utm_source%3Dcyrillic.app%26utm_medium%3Dguide%26utm_campaign%3Dtransliteration-vs-transcription" rel="noopener" target="_blank"><img alt="Get it on Google Play" height="71" loading="lazy" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="184"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span><a href="https://michaeltroger.com">© <span id="copyright-year"></span> Michael Troger</a></span>
+        <span><a href="https://michaeltroger.com/imprint">Imprint</a> · <a href="https://michaeltroger.com/privacy">Privacy Policy</a></span>
+    </footer>
+</div>
+<script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+    // Remember an explicitly chosen language and open the same guide in that language.
+    document.getElementById("language-select").addEventListener("change", function () {
+        try { localStorage.setItem("preferredLocale", this.value); } catch (e) {}
+        location.href = "/" + this.value + "/" + this.dataset.page;
+    });
+</script>
+</body>
+</html>
