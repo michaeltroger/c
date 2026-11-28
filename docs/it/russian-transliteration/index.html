@@ -197,12 +197,12 @@
     </main>
 
     <footer>
-        <span><a href="https://michaeltroger.com">© <span id="copyright-year"></span> Michael Troger</a></span>
-        <span><a href="https://michaeltroger.com/imprint">Note legali</a> · <a href="https://michaeltroger.com/privacy">Privacy</a></span>
-    </footer>
+    <span><a href="https://michaeltroger.com">© <span id="copyright-year"></span> Michael Troger</a></span>
+    <span><a href="https://michaeltroger.com/imprint">Note legali</a> · <a href="https://michaeltroger.com/privacy">Privacy</a></span>
+</footer>
+<script>document.getElementById("copyright-year").textContent = new Date().getFullYear();</script>
 </div>
 <script>
-    document.getElementById("copyright-year").textContent = new Date().getFullYear();
     // Remember an explicitly chosen language and open the same guide in that language.
     document.getElementById("language-select").addEventListener("change", function () {
         try { localStorage.setItem("preferredLocale", this.value); } catch (e) {}
