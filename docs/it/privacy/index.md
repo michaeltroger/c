@@ -22,6 +22,11 @@ Cirillico Latino Traslitterare può opzionalmente copiare il testo convertito ne
 
 Poiché tutta l’elaborazione avviene localmente sul tuo dispositivo, **nessun dato personale viene raccolto o trattato** dallo sviluppatore ai sensi del GDPR dell’UE.
 
+## Nessun account, nessuna pubblicità, nessun tracciamento
+- **Non è necessario un account**: Puoi usare Cirillico Latino Traslitterare senza registrarti né accedere.
+- **Nessuna pubblicità di terze parti**: L’app non mostra annunci di reti pubblicitarie. Può indicare le proprie funzionalità a pagamento facoltative.
+- **Nessun tracciamento né analisi**: L’app non contiene SDK di analisi, tracciamento o pubblicità e non crea profili utente.
+
 ## Acquisti in-app
 La nostra app può offrire acquisti in-app opzionali.  
 Tutte le transazioni vengono elaborate in modo sicuro tramite **Google Play Billing** o il **sistema di acquisti in-app di Apple**.  

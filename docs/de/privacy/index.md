@@ -22,6 +22,11 @@ Die App „Kyrillisch Latein Umwandler“ kann optional konvertierten Text zur V
 
 Da die gesamte Verarbeitung lokal auf Ihrem Gerät erfolgt, werden **keine personenbezogenen Daten** im Sinne der EU-DSGVO durch den Entwickler erhoben oder verarbeitet.
 
+## Kein Konto, keine Werbung, kein Tracking
+- **Kein Konto erforderlich**: Sie können „Kyrillisch Latein Umwandler“ ohne Registrierung oder Anmeldung nutzen.
+- **Keine Werbung Dritter**: Die App zeigt keine Werbung von Werbenetzwerken. Sie kann auf eigene optionale kostenpflichtige Funktionen hinweisen.
+- **Kein Tracking oder Analytics**: Die App enthält keine Analyse-, Tracking- oder Werbe-SDKs und erstellt keine Nutzerprofile.
+
 ## In-App-Käufe
 Unsere App kann optionale In-App-Käufe anbieten.  
 Alle Transaktionen werden sicher über **Google Play Billing** oder **Apples In-App-Kaufsystem** abgewickelt.  

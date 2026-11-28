@@ -22,6 +22,11 @@ O Cirílico Latino Transliterador pode, opcionalmente, copiar o texto convertido
 
 Como todo o processamento ocorre localmente no seu dispositivo, **nenhum dado pessoal é recolhido ou tratado** pelo desenvolvedor nos termos do RGPD da União Europeia.
 
+## Sem conta, publicidade ou rastreamento
+- **Não é necessária uma conta**: Pode usar o Cirílico Latino Transliterador sem se registar nem iniciar sessão.
+- **Sem publicidade de terceiros**: A aplicação não apresenta anúncios de redes publicitárias. Pode indicar as suas próprias funcionalidades pagas opcionais.
+- **Sem rastreamento nem análise**: A aplicação não contém SDKs de análise, rastreamento ou publicidade e não cria perfis de utilizadores.
+
 ## Compras na aplicação
 A nossa aplicação pode oferecer compras opcionais dentro da aplicação.  
 Todas as transações são processadas de forma segura através do **Google Play Billing** ou do **sistema de compras na aplicação da Apple**.  

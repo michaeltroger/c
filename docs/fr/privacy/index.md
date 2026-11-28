@@ -22,6 +22,11 @@ Cyrillique Latin Translittérer peut, de manière optionnelle, copier le texte c
 
 Étant donné que tout le traitement s’effectue localement sur votre appareil, **aucune donnée personnelle n’est collectée ou traitée** par le développeur au sens du RGPD de l’UE.
 
+## Pas de compte, pas de publicité, pas de suivi
+- **Aucun compte requis** : Vous pouvez utiliser Cyrillique Latin Translittérer sans vous inscrire ni vous connecter.
+- **Pas de publicité tierce** : L’application n’affiche aucune publicité provenant de régies publicitaires. Elle peut vous orienter vers ses propres fonctionnalités payantes facultatives.
+- **Pas de suivi ni d’analyse** : L’application ne contient aucun SDK d’analyse, de suivi ou de publicité et ne crée aucun profil utilisateur.
+
 ## Achats intégrés
 Notre application peut proposer des achats intégrés facultatifs.  
 Toutes les transactions sont traitées de manière sécurisée via **Google Play Billing** ou le **système d’achats intégrés d’Apple**.  

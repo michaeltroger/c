@@ -22,6 +22,11 @@ Cyrillic Latin Transliterator may optionally copy converted text to your device�
 
 Because all processing happens locally on your device, **no personal data is collected or processed** by the developer under the meaning of the EU GDPR.
 
+## No Account, No Ads, No Tracking
+- **No account required**: You can use Cyrillic Latin Transliterator without signing up or logging in.
+- **No third-party advertising**: The app shows no ads from advertising networks. It may point you to its own optional paid features.
+- **No tracking or analytics**: The app contains no analytics, tracking or advertising SDKs and does not create user profiles.
+
 ## In-App Purchases
 Our app may offer optional in-app purchases.
 All transactions are processed securely through **Google Play Billing** or **Apple’s In‑App Purchase system**.
