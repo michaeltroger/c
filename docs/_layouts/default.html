@@ -43,7 +43,8 @@
 {%- when "fr" -%}{%- assign footer_imprint = "Mentions légales" -%}{%- assign footer_privacy = "Politique de confidentialité" -%}
 {%- when "it" -%}{%- assign footer_imprint = "Informazioni legali" -%}{%- assign footer_privacy = "Informativa sulla Privacy" -%}
 {%- when "pt" -%}{%- assign footer_imprint = "Informações legais" -%}{%- assign footer_privacy = "Política de Privacidade" -%}
-{%- endcase -%}
+{%- endcase %}
+        <p><a href="https://michaeltroger.com">© <span id="copyright-year">{{ site.time | date: "%Y" }}</span> Michael Troger</a></p>
 {%- if footer_imprint != "" %}
         <p><a href="https://michaeltroger.com/imprint">{{ footer_imprint }}</a> · <a href="https://michaeltroger.com/privacy">{{ footer_privacy }}</a></p>
 {%- else %}
@@ -52,5 +53,8 @@
 {%- endif %}
       </div>
     </div>
+    <script>
+      document.getElementById("copyright-year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
